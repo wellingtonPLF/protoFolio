@@ -1,0 +1,51 @@
+#emailStyle{
+    background-color: white;
+    border-radius: 3px;
+    transform: scale(0.8);
+}
+
+#emailMessage{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 500px;
+    height: 270px;
+    background-color: white;
+}
+
+#emailMessage span{
+    font-weight: 620;
+    margin: 17px 0px 10px 12px;
+}
+
+#emailMessage input, textarea{
+    width: 92%;
+    font-size: 12px;
+    padding: 4px 0px 4px 10px;
+    border-radius: 3px;
+    background-color: #F7F6FE;
+    border-color: transparent;
+    margin: 10px;
+}
+
+#emailMessage textarea{
+    resize: none;
+}
+
+#btnSendMessage{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#btnSendMessage button{
+    background-color: #343435;
+    border: none;
+    color: white;
+    font-size: 10px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    padding: 12px;
+    padding-inline: 15px;
+    border-radius: 5px;
+}

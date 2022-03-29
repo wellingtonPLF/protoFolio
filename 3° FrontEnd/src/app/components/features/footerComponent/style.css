@@ -1,0 +1,38 @@
+.footer{
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 18vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tags{
+    width: 250px;
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tags a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.changeSize_W{
+    font-family: "Raleway";
+    font-size: 40px;
+}
+
+.changeSize_W::selection{
+    background-color: transparent;
+}

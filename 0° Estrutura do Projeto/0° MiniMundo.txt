@@ -1,0 +1,9 @@
+Alguém irá visitar o site para saber quem é o desenvolvedor,
+o que ele já fez, o que ele está fazendo, porque ele faz, 
+e analisar a qualidade do site e do dev, não só isso como também
+conseguir contatar o dev caso necessario.
+
+Haverá um menu em que o visitante poderá navegar por dentro do site,
+nesse menu conterá algumas tags, estas são: About, Work, Contact e Home.
+
+Email DTO rabbitMQ
