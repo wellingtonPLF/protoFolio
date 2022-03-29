@@ -1,6 +1,5 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './style.css'
-import FooterComponent from "../../components/features/footerComponent/footerComponent";
 import MenuComponent from "../../components/features/menuComponent/menuComponent";
 
 const MainScreenView = (props) => {

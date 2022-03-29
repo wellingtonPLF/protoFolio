@@ -8,10 +8,6 @@ import {Link} from "react-router-dom";
 
 const ContactViewComponent = (props) => {
 
-    const funcao = () =>{
-        console.log("Loaded")
-    }
-
     return (
         <div style={{backgroundColor: "white"}}>
             <div className={'contact'}>CONTACT ME BABY</div>
