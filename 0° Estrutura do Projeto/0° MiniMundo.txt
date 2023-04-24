@@ -6,4 +6,4 @@ conseguir contatar o dev caso necessario.
 Haverá um menu em que o visitante poderá navegar por dentro do site,
 nesse menu conterá algumas tags, estas são: About, Work, Contact e Home.
 
-Email DTO rabbitMQ
+Utilizar Email notification
