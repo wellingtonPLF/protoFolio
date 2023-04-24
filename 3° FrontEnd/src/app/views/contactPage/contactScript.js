@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import ContactViewComponent from "./contactViewComponent";
+import ContactViewComponent from "./contactView";
 
 class ContactScreenComponent extends Component {
 

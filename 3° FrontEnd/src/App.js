@@ -4,10 +4,10 @@ import FooterComponent from "./app/components/features/footerComponent/footerCom
 
 function App() {
   return (
-    <>
-      <AppRouter />
-      <FooterComponent/>
-    </>
+    <div id='app'>
+      <AppRouter id="body"/>
+      <FooterComponent id="footer"/>
+    </div>
   );
 }
 

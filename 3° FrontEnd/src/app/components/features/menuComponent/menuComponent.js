@@ -13,10 +13,10 @@ const MenuComponent = () => {
             <Link to="/contact">
                 <FontAwesomeIcon icon={faUser} />
             </Link>
-            <Link to="/">
+            <Link to="/about">
                 <FontAwesomeIcon icon={faEye} />
             </Link>
-            <Link to="/">
+            <Link to="/projects">
                 <FontAwesomeIcon icon={faCube} />
             </Link>
         </div>

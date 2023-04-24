@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import MainScreenView from "./mainScreenView";
+import MainScreenView from './mainView';
 
 class MainScreenComponent extends Component {
 
@@ -7,10 +7,10 @@ class MainScreenComponent extends Component {
         super(props);
         this.state = {
             projects: [
-                {id: 1, name: 'Projeto 1', description: 'Descrição N 1°'},
-                {id: 2, name: 'Projeto 2', description: 'Descrição N 2°'},
-                {id: 3, name: 'Projeto 3', description: 'Descrição N 3°'},
-                {id: 4, name: 'Projeto 4', description: 'Descrição N 4°'}]
+                {id: 1, name: 'Projeto 1', description: 'Title N 1°'},
+                {id: 2, name: 'Projeto 2', description: 'Title N 2°'},
+                {id: 3, name: 'Projeto 3', description: 'Title N 3°'},
+                {id: 4, name: 'Projeto 4', description: 'Title N 4°'}]
         }
     }
 

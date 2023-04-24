@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './style.css'
 import MenuComponent from "../../components/features/menuComponent/menuComponent";
 
 const MainScreenView = (props) => {
+
+    useEffect(() => {
+        console.log(props)
+    }, [])
 
     return (
         <div>

@@ -115,17 +115,17 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 20px;
-    right: 90px;
+    top: 37px;
+    right: 107px;
 }
 
 #load{
-    width: 70px;
+    width: 50px;
+    height: 50px;
     border-radius: 100px;
-    border: 10px solid white;
+    border: 8px dotted white;
     border-top-color: black;;
-    height: 70px;
-    animation: load 0.8s linear infinite;
+    animation: load 1.5s linear infinite;
 }
 
 @keyframes load {
