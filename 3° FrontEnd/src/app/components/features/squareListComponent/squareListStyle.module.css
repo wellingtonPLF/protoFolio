@@ -1,3 +1,25 @@
 #squareList {
+    display: flex;
+    align-content: space-evenly;
+    flex-wrap: wrap;
     color: black;
+}
+
+.project {
+    margin: 0px 10px;
+    width: 130px;
+    height: 100px;
+    border: 3px solid white;
+}
+
+.project div:nth-child(1){
+    height: 70%;
+    background-color: gray;
+}
+
+.project div:nth-child(2){
+    height: 30%;
+    color: white;
+    padding-left: 5px;
+    background-color: black;
 }

@@ -19,7 +19,7 @@
     align-items: flex-end;
 }
 
-#element {
+.element {
     display: flex;
     justify-content: center;
     align-items: center;

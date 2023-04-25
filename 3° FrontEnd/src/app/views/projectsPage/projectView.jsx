@@ -3,8 +3,9 @@ import styles from './projectStyle.module.css';
 import {Link} from "react-router-dom";
 import {faAngleLeft, faAnglesLeft} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import SquareListComponent from './../../components/features/squareListComponent/squareListView';
-import CircleListComponent from './../../components/features/circleListComponent/circleListView';
+import SquareListComponent from './../../components/features/squareListComponent/squareListScript';
+import CircleListComponent from './../../components/features/circleListComponent/circleListScript';
+import desenho from './../../../assets/images/programing.png'
 
 const ProjectViewComponent = (props) => {
 
@@ -27,7 +28,9 @@ const ProjectViewComponent = (props) => {
                 </div>
                 <div id={styles.tecnologies}>
                     <div id={styles.outdoor}>
-                        <div>outdoor</div>
+                        <div>
+                            <img src={desenho}/>
+                        </div>
                         <div>
                             <h2>Top Skills</h2>
                             <p>Web Development Tools To Use for Web Development</p>
