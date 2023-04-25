@@ -7,15 +7,15 @@ class SquareListComponent extends Component {
         super(props)
         this.state = {
             projects: [
-                {id: 1, img: '', title: 'Projeto1'},
-                {id: 2, img: '', title: 'Projeto2'},
-                {id: 3, img: '', title: 'Projeto3'},
-                {id: 4, img: '', title: 'Projeto4'},
-                {id: 5, img: '', title: 'Projeto5'},
-                {id: 6, img: '', title: 'Projeto6'},
-                {id: 7, img: '', title: 'Projeto7'},
-                {id: 8, img: '', title: 'Projeto8'},
-                {id: 9, img: '', title: 'Projeto9'},
+                {id: 1, img: '', title: 'Titulo 1'},
+                {id: 2, img: '', title: 'Titulo 2'},
+                {id: 3, img: '', title: 'Titulo 3'},
+                {id: 4, img: '', title: 'Titulo 4'},
+                {id: 5, img: '', title: 'Titulo 5'},
+                {id: 6, img: '', title: 'Titulo 6'},
+                {id: 7, img: '', title: 'Titulo 7'},
+                {id: 8, img: '', title: 'Titulo 8'},
+                {id: 9, img: '', title: 'Titulo 9'},
             ]
         }
     }
