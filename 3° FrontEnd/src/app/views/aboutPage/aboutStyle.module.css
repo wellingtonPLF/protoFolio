@@ -46,16 +46,38 @@
 }
 
 #me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 35%;
 }
 
+#me span{
+    width: 90%;
+    height: 100%;
+}
+
+#me span h3{
+    margin: 10px 0px 10px 0px;
+}
+
+#description{
+    display: flex; 
+    flex-direction: column;
+}
+
 #resume {
+    padding-top: 10px;
     color: black;
     font-weight: 500;
 }
 
 #languages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 45%;
 }
@@ -117,7 +139,7 @@
 #caricatura{
     position: absolute;
     right: 230px;
-    bottom: 225px;
+    bottom: 220px;
     border: 3px solid black;
     border-radius: 50%;
     width: 85px;

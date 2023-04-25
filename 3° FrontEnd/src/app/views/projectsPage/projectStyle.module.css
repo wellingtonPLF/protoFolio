@@ -61,6 +61,7 @@
 }
 
 #outdoor{
+    background-color: rgb(40, 38, 62);
     display: flex;
     width: 90%;
     height: 40%;
@@ -70,6 +71,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color:white;
     /* background-image: url(); */
     width: 40%;
 }
@@ -83,10 +85,13 @@
 
 #outdoor div:nth-child(2) h2{
     margin-bottom: 0px;
+    font-weight: 500;
+    color: rgb(225, 207, 123)
 }
 
 #outdoor div:nth-child(2) p{
     margin-top: 5px;
+    color: white;
 }
 
 #skills{

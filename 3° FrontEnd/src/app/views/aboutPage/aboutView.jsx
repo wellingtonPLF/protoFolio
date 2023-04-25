@@ -3,6 +3,7 @@ import styles from './aboutStyle.module.css';
 import {Link} from "react-router-dom";
 import {faAngleLeft, faAnglesLeft} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import FavoriteListComponent from '../../components/features/favoriteListComponent/favoriteListScript';
 
 const AboutViewComponent = (props) => {
 
@@ -18,25 +19,24 @@ const AboutViewComponent = (props) => {
                             </div>
                         </Link>
                     </div>
-                    <h2 id={styles.title}> &lt;About&gt;</h2>
+                    <h2 id={styles.title}> &lt;About/&gt;</h2>
                 </div>
                 <div id={styles.me}>
-                    <h3>Wellington Pessoa de Lima Filho</h3>
-                    <div>
-                        <div>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Fugiat similique, sapiente molestiae recusandae expedita 
-                            minima nulla accusantium, maiores voluptates reprehenderit 
-                            ea voluptatibus quos sed porro ad? Temporibus aperiam fugiat culpa!
+                    <span>
+                        <h3>Wellington Pessoa de Lima Filho</h3>
+                        <div id={styles.description}>
+                            <div>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Fugiat similique, sapiente molestiae recusandae expedita 
+                                minima nulla accusantium, maiores voluptates reprehenderit 
+                                ea voluptatibus quos sed porro ad? Temporibus aperiam fugiat culpa!
+                            </div>
+                            <a id={styles.resume} href=''>resume</a>
                         </div>
-                        <a id={styles.resume} href=''>resume</a>
-                    </div>
+                    </span>
                 </div>
                 <div id={styles.languages}>
-                    <div>Python</div>
-                    <div>C#</div>
-                    <div>Java</div>
-                    <div>Typescript</div>
+                    <FavoriteListComponent />
                 </div>
             </div>
             <div id={styles.aboutRightSide}>
