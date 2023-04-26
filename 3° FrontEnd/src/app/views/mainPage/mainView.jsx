@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './mainStyle.module.css'
 import MenuComponent from "./../../components/_main/menuComponent/menuView";
 
 const MainScreenView = (props) => {
+
+    useEffect(() => {
+        console.log(props.projects)
+    }, [])
 
     return (
         <div>
@@ -23,12 +27,12 @@ const MainScreenView = (props) => {
                             <div className={styles.mainProjects}>
                                 {
                                     props.projects.map( e => (
-                                        <span key={e.id}>
+                                        <a target="_blank" href={e.html_url} key={e.id}>
                                             <div className={styles.project}>
-                                                <div>{e.name}</div>
+                                                <div>{e.language}</div>
                                             </div>
-                                            <div style={{color: "black", marginLeft: "5px"}}>{e.description}</div>
-                                        </span>
+                                            <div style={{color: "black", marginLeft: "5px"}}>{e.name}</div>
+                                        </a>
                                     ))
                                 }
                             </div>

@@ -1,25 +1,34 @@
 import React, {Component} from 'react';
 import MainScreenView from './mainView';
+import gitHubService from '../../shared/service/GitHubService';
 
 class MainScreenComponent extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            projects: [
-                {id: 1, name: 'Projeto 1', description: 'Titulo N 1°'},
-                {id: 2, name: 'Projeto 2', description: 'Titulo N 2°'},
-                {id: 3, name: 'Projeto 3', description: 'Titulo N 3°'},
-                {id: 4, name: 'Projeto 4', description: 'Titulo N 4°'}]
+            projects: []
         }
     }
 
-    render() {
-        const {projects} = this.state
+    componentDidMount(){
+        gitHubService.listMains().then(
+            it => {
+                const result =  it.map((element) => {
+                    let {id, name, language, html_url} = element;
+                    return {id, name, language, html_url}
+                })
+                this.setState({
+                    projects: result
+                })
+            }
+        )
+    }
 
+    render() {
         return (
             <div>
-                <MainScreenView projects={projects}/>
+                <MainScreenView projects={this.state.projects}/>
             </div>
         );
     }

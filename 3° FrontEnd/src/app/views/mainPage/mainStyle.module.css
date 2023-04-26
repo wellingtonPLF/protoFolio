@@ -64,9 +64,10 @@
     color: white;
 }
 
-.mainProjects span{
+.mainProjects a{
     margin: 10px;
     width: 200px;
+    text-decoration: none;
     height: 160px;
     background-color: white;
 }

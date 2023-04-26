@@ -6,9 +6,9 @@ const SquareListView = (props) => {
         <div id={styles.squareList}>
             {
                 props.projects.map((element) => (
-                    <a href='' className={styles.project} key={element.id}>
-                        <div>{element.img}</div>
-                        <div>{element.title}</div>
+                    <a target='_blank' href={element.html_url} className={styles.project} key={element.id}>
+                        <div>{element.language}</div>
+                        <div>{element.name}</div>
                     </a>
                 ))
             }
