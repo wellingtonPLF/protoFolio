@@ -26,12 +26,14 @@ const AboutViewComponent = (props) => {
                         <h3>Wellington Pessoa de Lima Filho</h3>
                         <div id={styles.description}>
                             <div>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Fugiat similique, sapiente molestiae recusandae expedita 
-                                minima nulla accusantium, maiores voluptates reprehenderit 
-                                ea voluptatibus quos sed porro ad? Temporibus aperiam fugiat culpa!
+                                Atualmente sou aluno do Instituo Federal da Paraíba (IFPB), 
+                                ainda tenho muito o que aprender, mas sei que estou no caminho certo, 
+                                tenho certeza de que irei conhecer pessoas incríveis e que aprenderei 
+                                muito com elas e elas comigo. A minha área envolve desenvolvimento de 
+                                software e mesmo não possuindo tanta experiência sei que sou capaz de
+                                ir atrás daquilo que é relevante e que me fascina.
                             </div>
-                            <a id={styles.resume} href=''>resume</a>
+                            <a href=''>resume</a>
                         </div>
                     </span>
                 </div>
@@ -47,10 +49,12 @@ const AboutViewComponent = (props) => {
                 <div id={styles.randomFacts}>
                     <div id={styles.facts}>
                         <span>Random Facts</span>
-                        <p>Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Repellat odio, reiciendis 
-                        id quaerat modi ea, alias accusantium repellendus 
-                        nam aut ducimus. Aperiam!</p>
+                        <p> 
+                            Além de programador, tenho grande interesse por desenho, música e teatro. 
+                            Um dos meus passatempos é me exercitar todas as manhãs bem cedo, enquanto 
+                            aproveito as noites para estudar novas línguas no qual tenho
+                            interesse.
+                        </p>
                     </div>
                     <div id={styles.images}>
                         <div id={styles.caricatura}></div>
