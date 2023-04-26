@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./SquareListStyle.module.css"
+import styles from "./squareListStyle.module.css"
 
 const SquareListView = (props) => {
     return (
