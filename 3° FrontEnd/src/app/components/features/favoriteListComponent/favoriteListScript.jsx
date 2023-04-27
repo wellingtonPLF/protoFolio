@@ -7,14 +7,15 @@ class FavoriteListComponent extends Component {
     constructor(props){
         super(props)
         this.state = {
-            languages: ["Python", "C#", "Java", "TS"]
+            fav_1: ["Python", "C#", "Java", "TS"],
+            fav_2: ["SQL", "C++", "Kotlin", "Swift"]
         }
     }
 
     render() {
         return (
             <>
-                <FavoriteLanguageView lang={this.state.languages}/>
+                <FavoriteLanguageView lang_1={this.state.fav_1} lang_2={this.state.fav_2}/>
             </>
         );
     }

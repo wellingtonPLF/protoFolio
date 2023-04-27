@@ -6,14 +6,14 @@ const FavoriteListView = (props) => {
         <div id={styles.lang}>
             <span>
                 {
-                    props.lang.map( (element, index) => (
+                    props.lang_1.map( (element, index) => (
                         <div className={styles.element} key={index}>{element}</div>
                     ))
                 }
             </span>
             <span>
                 {
-                    props.lang.map( (element, index) => (
+                    props.lang_2.map( (element, index) => (
                         <div className={styles.element} key={index}>{element}</div>
                     ))
                 }

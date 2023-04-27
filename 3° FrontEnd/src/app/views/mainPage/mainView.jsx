@@ -4,10 +4,6 @@ import MenuComponent from "./../../components/_main/menuComponent/menuView";
 
 const MainScreenView = (props) => {
 
-    useEffect(() => {
-        console.log(props.projects)
-    }, [])
-
     return (
         <div>
             <div className={styles.imagem}>
