@@ -11,10 +11,42 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border: 2px solid black;
     border-radius: 50%;
     margin: 0px 5px;
+}
+
+.imgSkill {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#djangoFramework{
     color: white;
-    background-color: #008854;
-    width: 60px;
-    height: 60px;
+    font-size: 10px;
+    text-shadow:
+    2px 0 0 black,
+    -2px 0 0 black,
+    0 2px 0 black,
+    0 -2px 0 black,
+    1px 1px black,
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black;
+}
+
+#netFramework {
+    color: white;
+    text-shadow:
+    2px 0 0 purple,
+    -2px 0 0 purple,
+    0 2px 0 purple,
+    0 -2px 0 purple,
+    1px 1px purple,
+    -1px -1px 0 purple,
+    1px -1px 0 purple,
+    -1px 1px 0 purple;
 }

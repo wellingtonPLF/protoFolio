@@ -44,7 +44,7 @@ const AboutViewComponent = (props) => {
             <div id={styles.aboutRightSide}>
                 <div id={styles.hole}></div>
                 <div id={styles.video}>
-                    <video controls></video>
+                    <iframe src="https://www.youtube.com/embed/0lbzmZeS-BY" controls></iframe>
                 </div>
                 <div id={styles.randomFacts}>
                     <div id={styles.facts}>

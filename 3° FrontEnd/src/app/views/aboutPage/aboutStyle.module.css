@@ -70,12 +70,14 @@
 
 #description :nth-child(1){
     height: 85%;
+    width: 100%;
     font-size: 15px;
     padding-top: 10px;
 }
 
 #description :nth-child(2){ 
     height: 15%;
+    width: 60px;
     color: black;
     font-weight: 500;
 }
@@ -110,7 +112,7 @@
     height: 55%;
 }
 
-#video video {
+#video iframe {
     width: 100%;
     height: 100%;
 }
@@ -145,17 +147,19 @@
 
 #caricatura{
     position: absolute;
-    right: 230px;
-    bottom: 220px;
-    border: 3px solid black;
+    right: 245px;
+    bottom: 230px;
     border-radius: 50%;
     width: 85px;
     height: 85px;
-    background-image: url("./../../../assets/images/code.png");
+    background-image: url("./../../../assets/images/myface.jpg");
+    background-size: contain;
 }
 
 #desktop {
     width: 88%;
     height: 100%;
-    background-color: gray;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("./../../../assets/images/desktop.jpg");
 }

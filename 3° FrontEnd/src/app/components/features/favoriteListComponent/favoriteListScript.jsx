@@ -8,7 +8,7 @@ class FavoriteListComponent extends Component {
         super(props)
         this.state = {
             fav_1: ["Python", "C#", "Java", "TS"],
-            fav_2: ["SQL", "C++", "Kotlin", "Swift"]
+            fav_2: ["SQL", "C++", "Shell", "JS"]
         }
     }
 
