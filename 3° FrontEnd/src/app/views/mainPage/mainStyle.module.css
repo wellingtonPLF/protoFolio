@@ -109,7 +109,8 @@
 }
 
 .mainProjects a:nth-child(1) .project{
-    border: 2px solid gray;
+    border: 2px solid #343435;
+    border-bottom: 0px;
     background-image: url("https://raw.githubusercontent.com/wellingtonPLF/MyIndividualManagement/master/Myproject/src/assets/tasks.png");
     background-size: 100%;
     background-repeat: no-repeat;
