@@ -14,7 +14,8 @@ class SquareListComponent extends Component {
     componentDidMount(){
         gitHubService.listAll().then(
             it => {
-                const result =  it.map((element) => {
+                const projects = it.filter((element) => element.stargazers_count > 0);
+                const result =  projects.map((element) => {
                     let {id, name, language, html_url} = element;
                     return {id, name, language, html_url}
                 })

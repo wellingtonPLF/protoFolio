@@ -111,7 +111,23 @@
 .mainProjects a:nth-child(1) .project{
     border: 2px solid #343435;
     border-bottom: 0px;
-    background-image: url("https://raw.githubusercontent.com/wellingtonPLF/MyIndividualManagement/master/Myproject/src/assets/tasks.png");
+    background-image: url("https://raw.githubusercontent.com/wellingtonPLF/MyIndividualManagement/master/_Apresentation/userScreen.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.mainProjects a:nth-child(2) .project{
+    border: 2px solid #343435;
+    border-bottom: 0px;
+    background-image: url("https://raw.githubusercontent.com/wellingtonPLF/SalesWebMVC/master/_Apresentation/SalesWebProject.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.mainProjects a:nth-child(4) .project{
+    border: 2px solid #343435;
+    border-bottom: 0px;
+    background-image: url("https://raw.githubusercontent.com/wellingtonPLF/ReactMovieFrontEnd/master/_Apresentation/DSMovie.png");
     background-size: 100%;
     background-repeat: no-repeat;
 }

@@ -3,15 +3,14 @@ import axios from "axios";
 class GitHubService {
 
     constructor() {
-        //https://api.github.com/users/wellingtonPLF
-        this.listApi = axios.create({ baseURL: 'https://api.github.com/users/wellingtonPLF/repos?page=1&per_page=100'})
-        this.SingleApi = axios.create({ baseURL: 'https://api.github.com/repos/wellingtonPLF'})
+        this.listApi = 'https://api.github.com/users/wellingtonPLF/repos?page=1&per_page=100'
+        this.singleApi = 'https://api.github.com/repos/wellingtonPLF'
         //this.RepoApi = axiso.create({ baseURL: import.meta.env.GITHUB_API_REPO_URL })
         //this.UserApi = axiso.create({ baseURL: import.meta.env.GITHUB_API_USER_URL })
     }
 
     async listAll(){
-        const { data } = await this.listApi.get('/');
+        const { data } = await axios.get(`${this.listApi}`);
         return data;
     }
 
@@ -24,7 +23,7 @@ class GitHubService {
         ]
         const result = await Promise.all(
             projects.map(async (project) => {
-              const { data } = await this.SingleApi.get(`/${project}`);
+              const { data } = await axios.get(`${this.singleApi}/${project}`);
               return data
             })
         );
