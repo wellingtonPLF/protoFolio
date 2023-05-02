@@ -18,7 +18,7 @@ class GitHubService {
         const projects = [
             'MyIndividualManagement',
             'SalesWebMVC',
-            'reactQueryAppPD',
+            'MyJList',
             'ReactMovieFrontEnd'
         ]
         const result = await Promise.all(
