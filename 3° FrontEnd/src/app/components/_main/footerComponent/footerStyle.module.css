@@ -2,20 +2,24 @@
     display: flex;
     background-color: black;
     color: white;
-    height: 18vh;
+    height: 100%;
+    width: 100vw;
+    min-width: 350px;
     justify-content: center;
     align-items: center;
 }
 
 .footer span{
     display: flex;
+    width: 250px;
+    min-height: 100px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .tags{
-    width: 250px;
+    width: 100%;
     display: flex;
     margin-top: 15px;
     align-items: center;

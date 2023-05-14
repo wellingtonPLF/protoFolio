@@ -5,16 +5,17 @@ import MenuComponent from "./../../components/_main/menuComponent/menuView";
 const MainScreenView = (props) => {
 
     return (
-        <div>
-            <div className={styles.imagem}>
-                <div className={styles.threeJS}>
-                    <div></div>
-                </div>
-                <div className={styles.menu}>
-                    <MenuComponent />
-                </div>
+        <div id={styles.mainPage}>
+            <div className={styles.menu}>
+                <MenuComponent className={styles.menu} />
             </div>
-            <div className={styles.subjectProjects}>SOME OF MY LASTEST WORK</div>
+            <div className={styles.imagem}>
+                <div className={styles.face}></div>
+            </div>
+            <div className={styles.subject}>
+                <div></div>
+                <div>SOME OF MY LASTEST WORK</div>
+            </div>
             <div className={styles.projects}>
                 <div className={styles.grayLayer}></div>
                 <div className={styles.mainLayer}>

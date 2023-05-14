@@ -3,7 +3,6 @@
   display: grid;
   width: 100vw;
   height: 100vh;
-  grid-template-rows: 82vh 1fr;
   grid-template-areas: 
           "body"
           "footer"
