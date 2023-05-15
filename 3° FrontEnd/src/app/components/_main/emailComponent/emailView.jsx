@@ -5,7 +5,7 @@ const EmailView = () => {
     return (
         <div id={styles.emailStyle}>
             <div id={styles.emailMessage}>
-                <span>Send me a message</span>
+                <p>Send me a message</p>
                 <input placeholder="Full name*"/>
                 <input placeholder="Email address*"/>
                 <textarea placeholder="Message" rows="7"></textarea>
