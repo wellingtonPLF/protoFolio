@@ -11,15 +11,17 @@ const AboutViewComponent = (props) => {
         <div id={styles.aboutPage}>
             <div id={styles.aboutLeftSide}>
                 <div id={styles.header}>
-                    <div id={styles.getBack }>
-                        <Link to="/">
-                            <div id={'iconBack'}>
-                                <FontAwesomeIcon icon={faAnglesLeft} />
-                                <FontAwesomeIcon icon={faAngleLeft} />
-                            </div>
-                        </Link>
-                    </div>
-                    <h2 id={styles.title}> &lt;About/&gt;</h2>
+                    <span>
+                        <div id={styles.getBack }>
+                            <Link to="/">
+                                <div id={'iconBack'}>
+                                    <FontAwesomeIcon icon={faAnglesLeft} />
+                                    <FontAwesomeIcon icon={faAngleLeft} />
+                                </div>
+                            </Link>
+                        </div>
+                        <h2 id={styles.title}> &lt;About/&gt;</h2>
+                    </span>
                 </div>
                 <div id={styles.me}>
                     <span>
@@ -57,8 +59,8 @@ const AboutViewComponent = (props) => {
                         </p>
                     </div>
                     <div id={styles.images}>
-                        <div id={styles.caricatura}></div>
                         <div id={styles.desktop}></div>
+                        <div id={styles.caricatura}></div>
                     </div>
                 </div>
             </div>

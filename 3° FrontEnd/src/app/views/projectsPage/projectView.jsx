@@ -12,15 +12,17 @@ const ProjectViewComponent = (props) => {
     return (
         <div id={styles.projects}>
             <span>
-                <div  id={styles.fromProjectToMain}>
-                    <Link to="/">
-                        <div id={'iconBack'}>
-                            <FontAwesomeIcon icon={faAnglesLeft} />
-                            <FontAwesomeIcon icon={faAngleLeft} />
-                        </div>
-                    </Link>
+                <div id={styles.projectsHeader}>
+                    <div  id={styles.fromProjectToMain}>
+                        <Link to="/">
+                            <div id={'iconBack'}>
+                                <FontAwesomeIcon icon={faAnglesLeft} />
+                                <FontAwesomeIcon icon={faAngleLeft} />
+                            </div>
+                        </Link>
+                    </div>
+                    <div id={styles.title}>Projects</div>
                 </div>
-                <div id={styles.title}>Projects</div>
             </span>
             <span>
                 <div id={styles.projectList}>
