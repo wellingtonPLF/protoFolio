@@ -31,7 +31,7 @@ const MainScreenView = (props) => {
                                                 <div className={styles.project}>
                                                     <div>{e.language}</div>
                                                 </div>
-                                                <div style={{color: "black", marginLeft: "5px"}}>{e.name}</div>
+                                                <div className={styles.projectName}>{e.name}</div>
                                             </a>
                                         ))
                                     }

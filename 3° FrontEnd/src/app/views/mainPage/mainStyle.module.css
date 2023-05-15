@@ -1,6 +1,5 @@
 #mainPage{
     height: 100%;
-    background-color: blue;
     min-height: 500px;
     width: 100vw;
 }
@@ -13,7 +12,6 @@
 #blocoDois {
     width: 100vw;
     height: calc(100% - 320px);
-    background-color: yellow;
 }
 
 /* ================================================================== */
@@ -101,7 +99,7 @@
     background-color: gray;
     clip-path: polygon(0% 99%, 40% 99%, 60% -1%, 100% 0%, 100% 100%, 0% 100%);
 }
-
+/* ====================================================== */
 .mainLayer{
     color: white;
     position: relative;
@@ -119,7 +117,11 @@
     color: white;
 }
 
-.mainProjects a{
+.mainProjects div::selection{
+    background-color: transparent;
+}
+
+.mainProjects a {
     margin: 10px;
     width: 200px;
     height: 160px;
@@ -127,22 +129,24 @@
     background-color: white;
 }
 
-.mainProjects div::selection{
-    background-color: transparent;
-}
-
-.project{
-    margin: 4px;
-    background-color: #343435;
-    height: 122px;
-    width: 188px;
+.project {
+    height: 80%;
+    width: 100%;
     cursor: pointer;
-    border: 2px solid #343435;
+    background-color: yellow;
     border-bottom: 0px;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.projectName {
+    display: flex;
+    align-items: center;
+    color: black;
+    height: 20%;
+    padding-left: 5px;
+}
+/* ====================================================== */
 .mainProjects a:nth-child(1) .project{
     background-image: url("https://raw.githubusercontent.com/wellingtonPLF/MyIndividualManagement/master/_Apresentation/userScreen.png");
 }
@@ -165,4 +169,23 @@
     color: white;
     padding: 3px 5px 5px 5px;
     width: fit-content;
+}
+/* ====================================================== */
+
+@media screen and (max-width: 900px) {
+    
+    .mainProjects a{
+        width: 140px;
+        height: 100px;
+    }
+
+    .projectName{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .mainProjects {
+        flex-wrap: wrap;
+    }
 }
