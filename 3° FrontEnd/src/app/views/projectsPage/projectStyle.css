@@ -10,7 +10,8 @@
     display: flex;
     justify-content: center;
     height: 105px;
-    width: 100%;
+    width: 100vw;
+    min-width: 420px;
     background-color: black;
 }
 
@@ -24,14 +25,16 @@
 
 #projectsHeader{
     display: flex;
-    height: 100%;
-    width: 850px;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
+    width: 100%;
+    max-width: 980px;
 }
 
 #fromProjectToMain{
     height: 100%;
+    padding-left: 70px;
     display: flex;
     justify-content: flex-end;
 }
@@ -113,4 +116,18 @@
     align-items: center;
     width: 92%;
     height: 40%;
+}
+/* ========================================================== */
+@media screen and (max-width: 1015px) {
+    #projects span:nth-child(2){
+        flex-wrap: wrap;
+    }
+
+    #projects span:nth-child(2) > div {
+        order: 1;
+    }
+    
+    #projects span:nth-child(2) > div:first-child {
+        order: 2;
+    }
 }

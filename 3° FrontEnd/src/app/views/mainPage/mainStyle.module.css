@@ -133,7 +133,7 @@
     height: 80%;
     width: 100%;
     cursor: pointer;
-    background-color: yellow;
+    background-color: black;
     border-bottom: 0px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -162,7 +162,6 @@
 .mainProjects a:nth-child(4) .project{
     background-image: url("https://raw.githubusercontent.com/wellingtonPLF/ReactMovieFrontEnd/master/_Apresentation/DSMovie.png");
 }
-
 
 .project div:first-child{
     background-color: #008854;

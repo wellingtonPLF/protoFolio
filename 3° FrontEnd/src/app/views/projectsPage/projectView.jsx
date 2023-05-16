@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './projectStyle.module.css';
+import './projectStyle.css';
 import {Link} from "react-router-dom";
 import {faAngleLeft, faAnglesLeft} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -10,26 +10,26 @@ import desenho from './../../../assets/images/programing.png'
 const ProjectViewComponent = (props) => {
 
     return (
-        <div id={styles.projects}>
+        <div id="projects">
             <span>
-                <div id={styles.projectsHeader}>
-                    <div  id={styles.fromProjectToMain}>
+                <div id="projectsHeader">
+                    <div id="fromProjectToMain">
                         <Link to="/">
-                            <div id={'iconBack'}>
+                            <div id="iconBack">
                                 <FontAwesomeIcon icon={faAnglesLeft} />
                                 <FontAwesomeIcon icon={faAngleLeft} />
                             </div>
                         </Link>
                     </div>
-                    <div id={styles.title}>Projects</div>
+                    <div id="title">Projects</div>
                 </div>
             </span>
             <span>
-                <div id={styles.projectList}>
-                    <SquareListComponent />
+                <div id="projectList">
+                    <SquareListComponent id="square"/>
                 </div>
-                <div id={styles.tecnologies}>
-                    <div id={styles.outdoor}>
+                <div id="tecnologies">
+                    <div id="outdoor">
                         <div>
                             <img src={desenho}/>
                         </div>
@@ -38,7 +38,7 @@ const ProjectViewComponent = (props) => {
                             <p>Web Development Tools To Use for Web Development</p>
                         </div>
                     </div>
-                    <div id={styles.skills}>
+                    <div id="skills">
                         <CircleListComponent />
                     </div>
                 </div>
