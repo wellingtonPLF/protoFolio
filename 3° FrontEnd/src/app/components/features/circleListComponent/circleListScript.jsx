@@ -25,6 +25,12 @@ class CircleListComponent extends Component {
         }
     }
 
+    componentDidMount(){
+        if (window.innerWidth < 500) {
+            this.setState({ iconSkills: this.state.iconSkills.slice(0, 6)})
+        }
+    }
+
     render() {
         return (
             <>

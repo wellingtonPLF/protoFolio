@@ -2,6 +2,7 @@
 #skillList {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-content: space-evenly;
     width: 100%;
     height: 100%;

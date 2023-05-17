@@ -57,15 +57,14 @@
 
 #projectList{
     display: flex;
-    margin-top: 15px;
     height: 400px;
-    width: 565px;
+    width: calc(990px - 430px);
 }
 
 #tecnologies{
-    height: 400px;
-    width: 455px;
     display: flex;
+    height: 400px;
+    width: 430px;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
@@ -129,5 +128,25 @@
     
     #projects span:nth-child(2) > div:first-child {
         order: 2;
+    }
+}
+
+@media screen and (max-width: 570px) {
+
+    #title {
+        font-size: 30px;
+    }
+
+    #projects span:nth-child(1){
+        min-width: 300px;
+    }
+
+    #tecnologies {
+        width: 100%;
+    }
+
+    #projectList {
+        width: 100%;
+        height: 300px;
     }
 }
