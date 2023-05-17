@@ -19,8 +19,12 @@ class SquareListComponent extends Component {
                     let {id, name, language, html_url} = element;
                     return {id, name, language, html_url}
                 })
+                let lista = result.slice(0,9)
+                if (window.innerWidth < 500) {
+                    lista = result.slice(0, 4)
+                }
                 this.setState({
-                    projects: result.slice(0, 9)
+                    projects: lista
                 })
             }
         )

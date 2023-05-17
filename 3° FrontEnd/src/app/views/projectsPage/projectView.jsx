@@ -26,7 +26,7 @@ const ProjectViewComponent = (props) => {
             </span>
             <span>
                 <div id="projectList">
-                    <SquareListComponent id="square"/>
+                    <SquareListComponent/>
                 </div>
                 <div id="tecnologies">
                     <div id="outdoor">
