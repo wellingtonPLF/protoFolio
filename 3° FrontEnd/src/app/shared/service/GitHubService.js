@@ -45,6 +45,7 @@ class GitHubService {
                 }
             })
         );
+        console.log(result)
         result.splice(2, 0, indimap);
         return result
     }
