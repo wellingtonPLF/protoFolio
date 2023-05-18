@@ -6,7 +6,7 @@ class GitHubService {
         this.repoApi = axios.create({ baseURL: import.meta.env.VITE_GITHUB_API_REPO_URL })
         this.userApi = axios.create({ baseURL: import.meta.env.VITE_GITHUB_API_USER_URL })
 
-        this.localUserApi = axios.create({ baseURL: '' })
+        this.localUserApi = axios.create({ baseURL: 'https://super-protofolio.netlify.app' })
         this.localRepo = axios.create({ baseURL: '/projetos.json' })
     }
 
