@@ -6,7 +6,7 @@ class GitHubService {
         this.repoApi = axios.create({ baseURL: import.meta.env.VITE_GITHUB_API_REPO_URL })
         this.userApi = axios.create({ baseURL: import.meta.env.VITE_GITHUB_API_USER_URL })
 
-        this.localUserApi = axios.create({ baseURL: '/' })
+        this.localUserApi = axios.create({ baseURL: '' })
         this.localRepo = axios.create({ baseURL: '/projetos.json' })
     }
 
@@ -22,6 +22,7 @@ class GitHubService {
     }
 
     async listMains(){
+        console.log(this.localUserApi.defaults.baseURL)
         const projects = [
             'MyIndividualManagement',
             'SalesWebMVC',
@@ -40,7 +41,8 @@ class GitHubService {
                     return data
                 }
                 catch(e){
-                    const { data } = await this.localUserApi.get(`${project}.json`);
+                    console.log("OK")
+                    const { data } = await this.localUserApi.get(`/${project}.json`);
                     return data
                 }
             })
