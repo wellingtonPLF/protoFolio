@@ -2,6 +2,10 @@ import React from 'react';
 import './emailStyle.css'
 
 const EmailView = () => {
+    const handleEmail = ()  => {
+        //Send email...
+    }
+
     return (
         <div id='emailStyle'>
             <div id='emailMessage'>
@@ -11,7 +15,7 @@ const EmailView = () => {
                 <textarea placeholder="Message" rows="7"></textarea>
             </div>
             <div id='btnSendMessage'>
-                <button>send message</button>
+                <button onClick={() => handleEmail()}>send message</button>
             </div>
         </div>
     );

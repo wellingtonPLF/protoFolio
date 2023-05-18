@@ -156,7 +156,7 @@
 }
 
 .mainProjects a:nth-child(3) .project{
-    background-image: url("https://raw.githubusercontent.com/wellingtonPLF/myJList/master/_Apresentation/MyJList.png");
+    background-image: url("/indimap.png");
 }
 
 .mainProjects a:nth-child(4) .project{
