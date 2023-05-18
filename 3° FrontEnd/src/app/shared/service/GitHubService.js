@@ -22,7 +22,6 @@ class GitHubService {
     }
 
     async listMains(){
-        console.log(this.localUserApi.defaults.baseURL)
         const projects = [
             'MyIndividualManagement',
             'SalesWebMVC',
@@ -41,13 +40,11 @@ class GitHubService {
                     return data
                 }
                 catch(e){
-                    console.log("OK")
                     const { data } = await this.localUserApi.get(`/${project}.json`);
                     return data
                 }
             })
         );
-        console.log(result)
         result.splice(2, 0, indimap);
         return result
     }
