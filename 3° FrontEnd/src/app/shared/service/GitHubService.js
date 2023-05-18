@@ -35,16 +35,10 @@ class GitHubService {
         }
         const result = await Promise.all(
             projects.map(async (project) => {
-                try{
-                    const { data } = await this.userApi.get(`${project}`);
-                    return data
-                }
-                catch(e){
-                    const { data } = await this.localUserApi.get(`${project}.json`);
-                    console.log(data)
-                    console.log(this.localUserApi.defaults.baseURL, "<<")
-                    return data
-                }
+                // const { data } = await this.userApi.get(`${project}`);
+                // return data
+                const { data } = await this.localUserApi.get(`${project}.json`);
+                return data
             })
         );
         result.splice(2, 0, indimap);
