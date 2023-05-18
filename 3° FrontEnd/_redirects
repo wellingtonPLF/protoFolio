@@ -1,0 +1,8 @@
+# Redirect from /about to /about
+/about     /about
+
+# Redirect from /contact to /contact
+/contact    /contact
+
+# Redirect from /projects to /projects
+/projects     /projects
