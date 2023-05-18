@@ -12,7 +12,7 @@ class GitHubService {
 
     async listAll(){
         try {
-            const { data } = await this.repoApi.get('/');
+            const { data } = await this.repoApi.get();
             return data;
         }
         catch(e){

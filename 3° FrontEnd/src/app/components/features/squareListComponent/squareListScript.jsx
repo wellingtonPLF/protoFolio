@@ -16,7 +16,9 @@ class SquareListComponent extends Component {
         window.addEventListener('resize', this.handleWindowResize);
         gitHubService.listAll().then(
             it => {
-                const projects = it.filter((element) => element.stargazers_count > 0);
+                const projects = it.filter((element) => {
+                    return element.stargazers_count > 0
+                });
                 const result =  projects.map((element) => {
                     let {id, name, language, html_url} = element;
                     return {id, name, language, html_url}
