@@ -6,7 +6,7 @@ class GitHubService {
         this.repoApi = axios.create({ baseURL: import.meta.env.VITE_GITHUB_API_REPO_URL })
         this.userApi = axios.create({ baseURL: import.meta.env.VITE_GITHUB_API_USER_URL })
 
-        this.localUserApi = axios.create({ baseURL: 'https://super-protofolio.netlify.app' })
+        this.localUserApi = axios.create({ baseURL: '/' })
         this.localRepo = axios.create({ baseURL: '/projetos.json' })
     }
 
@@ -36,11 +36,13 @@ class GitHubService {
         const result = await Promise.all(
             projects.map(async (project) => {
                 try{
-                    const { data } = await this.userApi.get(`/${project}`);
+                    const { data } = await this.userApi.get(`${project}`);
                     return data
                 }
                 catch(e){
-                    const { data } = await this.localUserApi.get(`/${project}.json`);
+                    const { data } = await this.localUserApi.get(`${project}.json`);
+                    console.log(data)
+                    console.log(this.localUserApi.defaults.baseURL, "<<")
                     return data
                 }
             })
