@@ -4,5 +4,7 @@
 # Redirect from /contact to /contact
 /contact    /contact
 
+/test    https://docs.netlify.com
+
 # Redirect from /projects to /projects
 /projects     /projects
