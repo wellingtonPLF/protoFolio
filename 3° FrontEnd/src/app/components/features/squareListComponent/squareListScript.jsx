@@ -7,11 +7,13 @@ class SquareListComponent extends Component {
     constructor(props){
         super(props)
         this.state = {
-            projects: []
+            projects: [],
+            allProjects: []
         }
     }
 
     componentDidMount(){
+        window.addEventListener('resize', this.handleWindowResize);
         gitHubService.listAll().then(
             it => {
                 const projects = it.filter((element) => element.stargazers_count > 0);
@@ -19,16 +21,51 @@ class SquareListComponent extends Component {
                     let {id, name, language, html_url} = element;
                     return {id, name, language, html_url}
                 })
-                let lista = result.slice(0,9)
-                if (window.innerWidth < 500) {
-                    lista = result.slice(0, 4)
-                }
-                this.setState({
-                    projects: lista
+                this.setState({ allProjects: result.slice(0,9) }, () => {
+                    if (window.innerWidth < 372) {  
+                        this.setState({
+                            projects: this.state.allProjects.slice(0, 2)
+                        })
+                    }
+                    else if (window.innerWidth < 560) {  
+                        this.setState({
+                            projects: this.state.allProjects.slice(0, 4)
+                        })
+                    }
+                    else {
+                        this.setState({
+                            projects: this.state.allProjects
+                        })
+                    }
                 })
             }
         )
     }
+
+    handleWindowResize = () => {
+        if (window.innerWidth < 372) {    
+            if (this.state.projects.length != 2){
+                this.setState({
+                    projects: this.state.allProjects.slice(0, 2)
+                })
+            }
+        }
+        else if (window.innerWidth < 560) {
+            if (this.state.projects.length != 4){
+                this.setState({
+                    projects: this.state.allProjects.slice(0, 4)
+                })
+            }
+        }
+        else {
+            if (this.state.projects.length != 9){
+                this.setState({
+                    projects: this.state.allProjects.slice(0, 9)
+                })
+            }
+        }
+        
+      }
 
     render() {
         return (

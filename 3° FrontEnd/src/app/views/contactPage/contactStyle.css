@@ -1,5 +1,6 @@
 .contactView {
-    background-color: white; 
+    background-color: red; 
+    width: 100%;
     height: 100%;
 }
 
@@ -58,7 +59,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     bottom: 100%;
 }
@@ -67,21 +68,33 @@
     width: 950px;
     height: 520px;
     color: white;
+    padding-top: 10px;
 }
-
+/* ===============================================UpLayer==================== */
 #upLayer{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
+    justify-content: flex-end;
     height: calc(100% - 62%);
-    justify-content: space-around;
+
+}
+/* ===============================================FrstUp==================== */
+
+#upLayer > div:first-of-type{
+    display: flex;
+    justify-content: space-between;
+    width: 750px;
+    height: 100%;
 }
 
 #goingBack{
-    width: 25%;
-}
-
-#goingBack div:first-child {
+    display: flex;
     margin-top: 30px;
+    margin-left: 100px;
+    justify-content: center;
+    width: 100px;
+    height: 45px;
 }
 
 #phrase{
@@ -89,10 +102,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 500px;
+    padding-top: 20px;
 }
 
-#title{
+#titleContact{
+    text-align: center;
+    width: 100%;
+    height: 60px;
     font-size: 40px;
 }
 
@@ -100,12 +117,13 @@
     margin-top: 15px;
     font-size: 12px;
 }
-/* =================================================================== */
+/* ==============================================SecondUp===================== */
 #maps{
     display: flex;
+    height: 100%;
     justify-content: center;
     align-items: center;
-    width: 25%;
+    width: 200px;
 }
 
 #loadMaps{
@@ -113,8 +131,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 37px;
-    right: 107px;
 }
 
 #load{
@@ -143,10 +159,11 @@
 
 #downLayer{
     display: flex;
-    height: 62%;
+    height: 350px;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding-bottom: 10px;
 }
 
 #img{
@@ -155,5 +172,64 @@
 }
 
 #message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     margin-bottom: 30px;
+}
+/* =================================================================== */
+
+@media screen and (max-width: 955px){
+    .blackLayer {
+        width: 100%;
+        height: 100%;
+    }
+
+    #upLayer > div:first-of-type{
+        width: 100%;
+        height: 50%;
+        justify-content: flex-start !important;
+    }
+
+    #goingBack {
+        position: absolute;
+        margin-left: 0px;
+    }
+
+    #phrase{
+        align-items: center;
+        font-size: 12px;
+    }
+
+    #title {
+        font-size: 30px;
+    }
+
+    #emailStyle {
+        transform: scale(0.6) !important;
+    }
+
+    #googleMaps {
+        top: 0px;
+        transform: scale(1);
+    }
+
+    #maps {
+        width: 100%;
+        align-items: flex-end;
+        height: 50%;
+    }
+
+    #downLayer {
+        justify-content: center;
+    }
+
+    #img{
+        display: none;
+    }
+
+    #upLayer {
+        min-height: 500px;
+    }
 }

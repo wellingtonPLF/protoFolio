@@ -1,16 +1,16 @@
 import React from 'react';
-import styles from './emailStyle.module.css'
+import './emailStyle.css'
 
 const EmailView = () => {
     return (
-        <div id={styles.emailStyle}>
-            <div id={styles.emailMessage}>
+        <div id='emailStyle'>
+            <div id='emailMessage'>
                 <p>Send me a message</p>
                 <input placeholder="Full name*"/>
                 <input placeholder="Email address*"/>
                 <textarea placeholder="Message" rows="7"></textarea>
             </div>
-            <div id={styles.btnSendMessage}>
+            <div id='btnSendMessage'>
                 <button>send message</button>
             </div>
         </div>

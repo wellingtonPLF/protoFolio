@@ -14,12 +14,6 @@ class MainScreenComponent extends Component {
     componentDidMount(){
         gitHubService.listMains().then(
             it => {
-                // let x = name
-                // if(name.length > 12) {
-                //     const first12 = name.substring(0, 12);
-                //     x = first12 + "..."
-                // }
-                // const result = [{id, name: x, language, html_url}]
                 const result =  it.map((element) => {
                     let {id, name, language, html_url} = element;
                     return {id, name, language, html_url}

@@ -3,15 +3,22 @@ import axios from "axios";
 class GitHubService {
 
     constructor() {
-        this.listApi = 'https://api.github.com/users/wellingtonPLF/repos?page=1&per_page=100'
-        this.singleApi = 'https://api.github.com/repos/wellingtonPLF'
-        //this.RepoApi = axiso.create({ baseURL: import.meta.env.GITHUB_API_REPO_URL })
-        //this.UserApi = axiso.create({ baseURL: import.meta.env.GITHUB_API_USER_URL })
+        this.repoApi = axios.create({ baseURL: import.meta.env.VITE_GITHUB_API_REPO_URL })
+        this.userApi = axios.create({ baseURL: import.meta.env.VITE_GITHUB_API_USER_URL })
+
+        this.localUserApi = axios.create({ baseURL: import.meta.env.VITE_GITHUB_API_LOCAL_USER })
+        this.localRepo = axios.create({ baseURL: import.meta.env.VITE_GITHUB_API_LOCAL_REPO })
     }
 
     async listAll(){
-        const { data } = await axios.get(`${this.listApi}`);
-        return data;
+        try {
+            // const { data } = await this.repoApi.get('/');
+            return data;
+        }
+        catch(e){
+            const { data } = await this.localRepo.get('/');
+            return data;
+        }
     }
 
     async listMains(){
@@ -23,11 +30,16 @@ class GitHubService {
         ]
         const result = await Promise.all(
             projects.map(async (project) => {
-              const { data } = await axios.get(`${this.singleApi}/${project}`);
-              return data
+                try{
+                    // const { data } = await this.userApi.get(`/${project}`);
+                    return data
+                }
+                catch(e){
+                    const { data } = await this.localUserApi.get(`/${project}.json`);
+                    return data
+                }
             })
         );
-    
         return result
     }
 }

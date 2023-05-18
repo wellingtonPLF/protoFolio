@@ -3,8 +3,7 @@ import axios from "axios";
 class EmailService {
 
     constructor() {
-        //this.api = axiso.create({ baseURL: import.meta.env.EMAIL_API_URL })
-         this.api = axios.create({ baseURL: 'http://localhost:8081/email'})
+        this.api = axios.create({ baseURL: import.meta.env.VITE_EMAIL_API_URL })
     }
 
     async listar(){
