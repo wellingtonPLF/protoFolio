@@ -169,7 +169,8 @@
 .project div:first-child{
     background-color: #008854;
     color: white;
-    padding: 3px 5px 5px 5px;
+    border-bottom-right-radius: 10px;
+    padding: 3px 10px 5px;
     width: fit-content;
 }
 /* ====================================================== */

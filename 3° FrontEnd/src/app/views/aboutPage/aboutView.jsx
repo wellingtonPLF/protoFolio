@@ -64,7 +64,7 @@ const AboutViewComponent = (props) => {
                     </div>
                     <div id={styles.images}>
                         <div id={styles.desktop}></div>
-                        <div id={styles.caricatura}></div>
+                        {/* <div id={styles.caricatura}></div> */}
                     </div>
                 </div>
             </div>
