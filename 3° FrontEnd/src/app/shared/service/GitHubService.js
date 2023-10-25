@@ -24,7 +24,7 @@ class GitHubService {
     async listMains(){
         const projects = [
             'MyIndividualManagement',
-            'SalesWebMVC',
+            'MyJList',
             'ReactMovieFrontEnd'
         ]
         const indimap = {

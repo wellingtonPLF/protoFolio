@@ -3,8 +3,6 @@ import ContactViewComponent from "./contactView";
 
 class ContactScreenComponent extends Component {
 
-    
-
     render() {
         return (
             <div>

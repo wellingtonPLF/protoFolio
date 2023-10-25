@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     height: 105px;
-    width: 100vw;
+    width: 100%;
     min-width: 420px;
     background-color: black;
 }
@@ -57,9 +57,8 @@
 
 #projectList{
     display: flex;
-    height: 400px;
-    margin-top: 10px;
-    width: calc(990px - 420px);
+    margin: 10px 0px 15px 0px;
+    max-width: calc(990px - 420px);
 }
 
 #tecnologies{
@@ -149,6 +148,5 @@
     #projectList {
         width: 100%;
         margin-top: 0px;
-        height: 300px;
     }
 }

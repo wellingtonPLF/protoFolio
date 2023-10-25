@@ -4,6 +4,7 @@ import './emailStyle.css'
 const EmailView = () => {
     const handleEmail = ()  => {
         //Send email...
+        console.log("Something went wrong on deploy")
     }
 
     return (

@@ -7,7 +7,7 @@
 }
 
 .project {
-    margin: 0px 10px;
+    margin: 3px 3px;
     text-decoration: none;
     width: 160px;
     height: 120px;
@@ -17,7 +17,12 @@
 .project div:nth-child(1){
     height: 70%;
     color: white;
-    background-image: linear-gradient(to right top, #12a86ffd, #031a18b2);
+    padding-left: 3px;
+    /* background-image: linear-gradient(to right top, #12a86ffd, #031a18b2); */
+    background: url("https://i.pinimg.com/originals/3e/b1/d7/3eb1d7ff5cf36b1d32e340f36d9bc82b.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .project div:nth-child(2){

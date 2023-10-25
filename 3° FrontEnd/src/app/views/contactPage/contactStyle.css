@@ -12,6 +12,7 @@
     cursor: default;
     height: 35px;
     width: 100%;
+    min-width: 300px;
     position: absolute;
 }
 
@@ -59,7 +60,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     bottom: 100%;
 }
@@ -102,7 +103,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px;
+    margin: auto;
     padding-top: 20px;
 }
 
@@ -119,21 +120,20 @@
 }
 /* ==============================================SecondUp===================== */
 #maps{
-    display: flex;
     height: 100%;
-    justify-content: center;
-    align-items: center;
     width: 200px;
 }
 
-#loadMaps{
-    height: 100%;
+#maps > :first-child {
     display: flex;
+    height: 100%;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 #load{
+    position: absolute;
     width: 50px;
     height: 50px;
     border-radius: 100px;
@@ -142,17 +142,23 @@
     animation: load 1.5s linear infinite;
 }
 
+#googleMaps {
+    display: flex;
+    width: 100%;
+    position: absolute;
+}
+
+#googleMaps > * {
+    margin: auto;
+    border: 5px dotted white;
+    width: 170px;
+    height: 150px
+}    
+
 @keyframes load {
     to {
         transform: rotate(360deg);
     }
-}
-
-#googleMaps{
-    position: relative;
-    bottom: 20px;
-    right: 9px;
-    transform: scale(0.6);
 }
 
 /* =================================================================== */
@@ -166,17 +172,17 @@
     padding-bottom: 10px;
 }
 
-#img{
-    transform: scale(0.8);
-    margin-bottom: 90px;
+#img > * {
+    width: 385px;
 }
 
 #message{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin-bottom: 30px;
+    width: 480px;
+    margin-top: 20px;
+    margin-right: 10px;
 }
 /* =================================================================== */
 
@@ -188,7 +194,7 @@
 
     #upLayer > div:first-of-type{
         width: 100%;
-        height: 50%;
+        height: 45%;
         justify-content: flex-start !important;
     }
 
@@ -206,20 +212,16 @@
         font-size: 30px;
     }
 
-    #emailStyle {
-        transform: scale(0.6) !important;
-    }
-
-    #googleMaps {
-        top: 0px;
-        transform: scale(1);
-    }
-
     #maps {
         width: 100%;
-        align-items: flex-end;
         height: 50%;
     }
+
+    #googleMaps > * {
+        width: 45%;
+        min-width: 300px;
+        height: 220px
+    }  
 
     #downLayer {
         justify-content: center;
@@ -229,7 +231,13 @@
         display: none;
     }
 
+    #message{
+        width: 45%;
+        min-width: 300px;
+        margin: 0;
+    }
+
     #upLayer {
-        min-height: 500px;
+        min-height: 450px;
     }
 }
