@@ -38,7 +38,8 @@ const ContactViewComponent = (props) => {
                                 </div>
                                 <div id="phrase">
                                     <div id="titleContact">Frase do Ano</div>
-                                    <div>Você nunca vai entender como o mundo funciona,
+                                    <div>
+                                        <div>Você nunca vai entender como o mundo funciona,</div>
                                         <div> se não aprender as regras do jogo.</div>
                                     </div>
                                     <div id="date">27 de Março por Wellington Pessoa</div>

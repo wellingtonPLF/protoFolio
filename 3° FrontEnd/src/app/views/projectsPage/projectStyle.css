@@ -71,7 +71,8 @@
 }
 
 #outdoor{
-    background-color: rgb(40, 38, 62);
+    background-color: #040124;
+    border-radius: 10px;
     display: flex;
     width: 90%;
     height: 40%;

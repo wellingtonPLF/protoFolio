@@ -7,17 +7,17 @@ import {Link} from "react-router-dom";
 const MenuComponent = () => {
     return (
         <div className={styles.links}>
-            <Link to="/">
-                <FontAwesomeIcon icon={faHome} />
+            <Link to="/" >
+                <FontAwesomeIcon title='HomePage' icon={faHome} />
             </Link>
             <Link to="/contact">
-                <FontAwesomeIcon icon={faUser} />
+                <FontAwesomeIcon title='ContactPage' icon={faUser} />
             </Link>
             <Link to="/about">
-                <FontAwesomeIcon icon={faEye} />
+                <FontAwesomeIcon title='AboutPage' icon={faEye} />
             </Link>
             <Link to="/projects">
-                <FontAwesomeIcon icon={faCube} />
+                <FontAwesomeIcon title='Projects' icon={faCube} />
             </Link>
         </div>
     );
