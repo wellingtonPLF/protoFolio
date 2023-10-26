@@ -11,9 +11,9 @@ const EmailView = () => {
         <div id='emailStyle'>
             <div id='emailMessage'>
                 <p>Send me a message</p>
-                <input placeholder="Full name*"/>
-                <input placeholder="Email address*"/>
-                <textarea placeholder="Message" rows="7"></textarea>
+                <input placeholder="Full Name"/>
+                <input placeholder="Email Address"/>
+                <textarea placeholder="Type Something Here..." rows="7"></textarea>
             </div>
             <div id='btnSendMessage'>
                 <button onClick={() => handleEmail()}>send message</button>

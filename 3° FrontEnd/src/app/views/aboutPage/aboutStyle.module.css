@@ -267,6 +267,7 @@
     }
 
     #me {
+        margin-top: 10%;
         justify-content: center !important;
         align-items: center !important;
     }
