@@ -142,14 +142,16 @@
 .projectName {
     display: flex;
     align-items: center;
-    color: black;
+    color: white;
     height: 20%;
     font-size: 13px;
     padding-bottom: 3px;
     padding-left: 12px;
     margin-top: 8px;
     border-radius: 10px;
-    background-color: white;
+    background-color: #0e0f14a1;
+    border: 2px solid white;
+    font-weight: 600;
 }
 /* ====================================================== */
 .project {
