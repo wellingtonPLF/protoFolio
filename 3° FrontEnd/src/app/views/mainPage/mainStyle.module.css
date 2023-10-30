@@ -152,6 +152,10 @@
     background-color: white;
 }
 /* ====================================================== */
+.project {
+    background-position: center;
+}
+
 .mainProjects a:nth-child(1) .project{
     background-image: url("https://raw.githubusercontent.com/wellingtonPLF/MyIndividualManagement/master/_Apresentation/userScreen.png");
 }
@@ -165,7 +169,7 @@
 }
 
 .mainProjects a:nth-child(4) .project{
-    background-image: url("https://raw.githubusercontent.com/wellingtonPLF/ReactMovieFrontEnd/master/_Apresentation/DSMovie.png");
+    background-image: url("https://github.com/wellingtonPLF/RockStarBand/blob/main/_Apresentation/mainScreen.png?raw=true");
 }
 
 .project div:first-child{
