@@ -36,7 +36,7 @@ const AboutViewComponent = (props) => {
                                     software e mesmo não possuindo tanta experiência sei que sou capaz de
                                     ir atrás daquilo que é relevante e que me fascina.
                                 </div>
-                                <a href='https://drive.google.com/file/d/1cxVQ0pyyuqNpCsAWiRW_GVdIBWaDZebt/view?usp=drive_link' target='_blank'>resume</a>
+                                <a href='https://drive.google.com/file/d/1nyRhUYTHKsw6IyxWUqKotTsbomLNaPPj/view?usp=drive_link' target='_blank'>resume</a>
                             </div>
                         </span>
                     </div>
