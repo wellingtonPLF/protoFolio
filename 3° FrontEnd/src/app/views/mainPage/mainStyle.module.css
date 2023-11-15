@@ -21,7 +21,7 @@
     height: 100%;
     width: 100%;
     min-width: 350px;
-    background: linear-gradient(rgba(0, 0, 0, 0.37) 100%, transparent), url("../../../assets/gifs/matrix-rain.gif");
+    background: linear-gradient(rgba(0, 0, 0, 0.6) 100%, transparent), url("../../../assets/gifs/matrix-rain.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -87,22 +87,13 @@
     width: 100%;
     min-height: 220px;
     min-width: 350px;
-    background-color: black;
+    background-image: linear-gradient(to top, rgb(0, 0, 0) 30%, rgba(12, 44, 59, 0.349)),
+    url("https://wallpapercave.com/wp/wp2732962.jpg");
 }
 
-.grayLayer{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #11141c;
-    clip-path: polygon(0% 99%, 40% 99%, 60% -1%, 100% 0%, 100% 100%, 0% 100%);
-}
 /* ====================================================== */
 .mainLayer{
     color: white;
-    position: relative;
     bottom: 100%;
     width: 100vw;
     height: 100%;
@@ -111,7 +102,7 @@
 
 .mainProjects{
     display: flex;
-    padding-top: 37px;
+    padding-top: 40px;
     justify-content: center;
     align-items: center;
     color: white;

@@ -20,7 +20,6 @@ const MainScreenView = (props) => {
             </div>
             <div id={styles.blocoDois}>
                 <div className={styles.projects}>
-                    <div className={styles.grayLayer}></div>
                     <div className={styles.mainLayer}>
                         {
                             props.projects && (

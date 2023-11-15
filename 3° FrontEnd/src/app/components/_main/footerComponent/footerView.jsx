@@ -9,16 +9,14 @@ const FooterComponent = () => {
             <span>
                 <div className={styles.changeSize_W}>W</div>
                 <div className={styles.tags}>
-                    <a href="https://play.unity.com" target="_blank">
-                        <FontAwesomeIcon icon={faUnity} />
+                    <a href="https://github.com/wellingtonPLF" target="_blank" >
+                        <FontAwesomeIcon icon={faGithub} />
                     </a>
                     <a href="https://www.linkedin.com/in/wellplf/" target="_blank" >
                         <FontAwesomeIcon icon={faLinkedin} />
-
                     </a>
-                    <a href="https://github.com/wellingtonPLF" target="_blank" >
-                        <FontAwesomeIcon icon={faGithub} />
-
+                    <a href="https://play.unity.com" target="_blank">
+                        <FontAwesomeIcon icon={faUnity} />
                     </a>
                     <a href="https://discord.com" target="_blank">
                         <FontAwesomeIcon icon={faDiscord} />
