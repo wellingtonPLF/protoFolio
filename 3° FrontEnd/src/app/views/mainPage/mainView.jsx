@@ -27,8 +27,10 @@ const MainScreenView = (props) => {
                                     {
                                         props.projects.map( e => (
                                             <a target="_blank" href={e.html_url} key={e.id}>
-                                                <div className={styles.project}>
-                                                    <div>{e.language}</div>
+                                                <div>
+                                                    <div className={styles.project}>
+                                                        <div>{e.language}</div>
+                                                    </div>
                                                 </div>
                                                 <div className={styles.projectName}>{e.name}</div>
                                             </a>

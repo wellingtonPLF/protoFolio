@@ -11,14 +11,14 @@
 }
 
 #iconBack{
-  font-size: 30px;
+  font-size: 3vh;
   color: white;
-  width: 50px;
+  width: 5vh;
 }
 
 #iconBack :nth-child(2){
   position: relative;
-  right: 7px;
+  right: 0.7vh;
 }
 
 #body{

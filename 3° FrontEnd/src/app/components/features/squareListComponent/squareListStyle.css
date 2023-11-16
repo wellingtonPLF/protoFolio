@@ -7,19 +7,19 @@
 }
 
 .project {
-    margin: 3px 3px;
+    margin: 0.3vh 0.3vh;
     text-decoration: none;
-    width: 160px;
-    height: 120px;
-    border: 3px solid white;
+    width: 16vh;
+    height: 12vh;
+    border: 0.3vh solid white;
 }
 
 .project div:nth-child(1){
     height: 70%;
     color: white;
-    padding-left: 5px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    padding-left: 0.5vh;
+    border-top-right-radius: 1vh;
+    border-top-left-radius: 1vh;
     /* background-image: linear-gradient(to right top, #12a86ffd, #031a18b2); */
     background: url("https://i.pinimg.com/originals/3e/b1/d7/3eb1d7ff5cf36b1d32e340f36d9bc82b.gif");
     background-size: cover;
@@ -29,10 +29,10 @@
 
 .project div:nth-child(2){
     height: 30%;
-    font-size: 13px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    font-size: 1.3vh;
+    border-bottom-right-radius: 1vh;
+    border-bottom-left-radius: 1vh;
     color: white;
-    padding-left: 5px;
+    padding-left: 0.5vh;
     background-color: #040124;
 }

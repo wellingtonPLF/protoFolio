@@ -1,8 +1,8 @@
 #emailStyle{
     background-color: white;
-    border-radius: 3px;
+    border-radius: 0.3vh;
     width: 100%;
-    padding: 10px;
+    padding: 1.5vh;
 }
 
 #emailMessage{
@@ -15,13 +15,14 @@
 
 #emailMessage p {
     font-weight: 620;
-    margin: 8px 0 15px 0;
+    font-size: 1.7vh;
+    margin: 0.8vh 0 1.5vh 0;
 }
 
 #emailMessage input {
     border: 0;
-    margin-bottom: 10px;
-    padding: 4px 10px 4px 10px;
+    margin-bottom: 1vh;
+    padding: 0.4vh 1vh 0.4vh 1vh;
 }
 
 #emailMessage textarea{
@@ -29,9 +30,10 @@
 }
 
 #emailMessage input, textarea{
-    padding-left: 5px;
-    border-radius: 5px;
-    font-size: 12px;
+    padding-left: 0.5vh;
+    border-radius: 0.5vh;
+    font-size: 1.2vh;
+    font-family: san-serif;
     background-color: #F7F6FE;
     border-color: transparent;
 }
@@ -46,9 +48,9 @@
     cursor: not-allowed;
     border: none;
     color: white;
-    font-size: 10px;
-    margin: 15px 11px 5px 0px;
-    padding: 12px;
-    padding-inline: 15px;
-    border-radius: 5px;
+    font-size: 1vh;
+    margin: 1.5vh 1.1vh 0.5vh 0px;
+    padding: 1.2vh;
+    padding-inline: 1.5vh;
+    border-radius: 0.5vh;
 }

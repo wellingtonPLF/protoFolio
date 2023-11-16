@@ -10,8 +10,8 @@
 
 .footer span{
     display: flex;
-    width: 250px;
-    min-height: 100px;
+    width: 25vh;
+    min-height: 10vh;  
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@
 .tags{
     width: 100%;
     display: flex;
-    margin-top: 15px;
+    margin-top: 1.5vh;
     align-items: center;
     justify-content: space-around;
 }
@@ -28,12 +28,13 @@
 .tags a{
     color: white;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 2.2vh;
 }
 
 .changeSize_W{
     font-family: "Raleway";
-    font-size: 40px;
+    font-size: 4vh;
+    cursor: default;
 }
 
 .changeSize_W::selection{

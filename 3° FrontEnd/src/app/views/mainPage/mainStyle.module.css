@@ -4,12 +4,13 @@
 
 #blocoUm {
     width: 100%;
-    height: 380px;
+    height: 48vh;
+    min-width: 40vh;
 }
 
 #blocoDois {
     width: 100%;
-    height: calc(100% - 380px);
+    height: calc(100% - 48vh);
 }
 
 /* ================================================================== */
@@ -20,7 +21,7 @@
     color: white;
     height: 100%;
     width: 100%;
-    min-width: 350px;
+    min-width: 35vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6) 100%, transparent), url("../../../assets/gifs/matrix-rain.gif");
     background-repeat: no-repeat;
     background-position: center;
@@ -31,16 +32,16 @@
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    margin-top: 20px;
-    min-width: 350px;
+    margin-top: 2vh;
+    min-width: 35vh;
     position: absolute;
 }
 
 .face{
-    width: 180px;
-    height: 180px;
+    width: 23vh;
+    height: 23vh;
     border-radius: 50%;
-    border: 5px solid white;
+    border: 0.7vh solid white;
     background-image: url("../../../assets/images/eu.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -53,11 +54,12 @@
     justify-content: center;
     height: 5%;
     width: 100vw;
-    min-width: 350px;
+    min-width: 35vh; 
+    min-width: 40vh;
 }
 
 .subject div:nth-child(1){
-    height: 35px;
+    height: 5vh;
     width: 100%;
     z-index: 5;
     position: absolute;
@@ -72,10 +74,10 @@
     position: absolute;
     justify-content: center;
     color: red;
-    height: 35px;
-    width: 250px;
+    height: 4.5vh;
+    width: 32vh;
     color: gray;
-    font-size: 10px;
+    font-size: 1.2vh;
     font-weight: 620;
     background-color: white;
     clip-path: polygon(10% 100%, 90% 100%, 100% 0%, 0% 0%);
@@ -85,8 +87,8 @@
 .projects{
     height: 100%;
     width: 100%;
-    min-height: 220px;
-    min-width: 350px;
+    min-height: 22vh;
+    min-width: 35vh;
     background-image: linear-gradient(to top, rgb(0, 0, 0) 30%, rgba(12, 44, 59, 0.349)),
     url("https://wallpapercave.com/wp/wp2732962.jpg");
 }
@@ -97,15 +99,16 @@
     bottom: 100%;
     width: 100vw;
     height: 100%;
-    min-width: 350px;
+    min-width: 35vh;
 }
 
 .mainProjects{
     display: flex;
-    padding-top: 40px;
+    padding-top: 5vh;
     justify-content: center;
     align-items: center;
     color: white;
+    min-width: 40vh;
 }
 
 .mainProjects div::selection{
@@ -113,21 +116,31 @@
 }
 
 .mainProjects a {
-    margin: 10px;
-    width: 210px;
-    height: 160px;
+    margin: 1vh;
+    width: 27vh;
+    height: 21vh;
+    transition: transform 1s;
+    will-change: transform;
     text-decoration: none;
 }
 
-.project {
+.mainProjects a > div:first-child {
     height: 80%;
+}
+
+.project {
+    height: 100%;
     width: 100%;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 1vh;
     background-color: black;
     border-bottom: 0px;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.mainProjects a:hover {
+    transform: scale(0.9)
 }
 
 .projectName {
@@ -135,13 +148,12 @@
     align-items: center;
     color: white;
     height: 20%;
-    font-size: 13px;
-    padding-bottom: 3px;
-    padding-left: 12px;
-    margin-top: 8px;
-    border-radius: 10px;
+    font-size: 1.5vh;
+    padding-left: 1.2vh;
+    margin-top: 0.8vh;
+    border-radius: 1.2vh;
     background-color: #0e0f14a1;
-    border: 2px solid white;
+    border: 0.35vh solid white;
     font-weight: 600;
 }
 /* ====================================================== */
@@ -168,28 +180,45 @@
 .project div:first-child{
     background-color: #008854;
     color: white;
-    border-bottom-right-radius: 10px;
-    padding: 3px 10px 7px;
+    border-bottom-right-radius: 1vh;
+    padding: 0.8vh 1.2vh;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 1.5vh;
     width: fit-content;
 }
 /* ====================================================== */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1150px) {
     
     .mainProjects a{
-        width: 140px;
-        height: 100px;
+        width: 18vh;
+        height: 15vh;
     }
 
     .projectName{
-        font-size: 10px;
+        font-size: 1vh;
+    }
+
+    .project div:first-child{
+        padding: 0.8vh 1.2vh;
+        font-size: 1.15vh;
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
     .mainProjects {
         flex-wrap: wrap;
+    }
+
+    .mainProjects a{
+        margin-bottom: 2vh;
+    }
+    
+    #blocoUm {
+        height: 38vh;
+    }
+
+    #blocoDois {
+        height: calc(100% - 38vh);
     }
 }
