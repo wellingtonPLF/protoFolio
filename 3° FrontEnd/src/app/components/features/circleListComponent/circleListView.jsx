@@ -16,10 +16,10 @@ const CircleListView = (props) => {
                     ))
                 }
                 <div className={`${styles.element} ${styles.imgSkill}`} 
-                style={{backgroundImage: `url(${jwt})`, backgroundSize: "40px"}}></div>
+                style={{backgroundImage: `url(${jwt})`, backgroundSize: "4.5vh"}}></div>
                 <b className={styles.element} id={styles.djangoFramework}>Django</b>
                 <div className={`${styles.element} ${styles.imgSkill}`} 
-                style={{backgroundImage: `url(${springBoot})`, backgroundSize: "30px"}}></div>
+                style={{backgroundImage: `url(${springBoot})`, backgroundSize: "3.5vh"}}></div>
                 <b className={styles.element} id={styles.netFramework}>.NET</b>
 
             </div>

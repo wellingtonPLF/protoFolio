@@ -42,7 +42,7 @@
     clip-path: polygon(0% 100%, 93% 100%, 101% 38%, 101% 0%, 0% 0%);
     background-color: black;
     box-sizing: border-box;
-    border-bottom: 0.9vh solid #06b56e;
+    border-bottom: 0.8vh solid #06b56e;
 }
 
 #header span{
