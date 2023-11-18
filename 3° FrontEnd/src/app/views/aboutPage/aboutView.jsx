@@ -29,7 +29,7 @@ const AboutViewComponent = (props) => {
                             <h3>Wellington Pessoa de Lima Filho</h3>
                             <div id={styles.description}>
                                 <div>
-                                    Atualmente sou aluno do Instituo Federal da Paraíba (IFPB), 
+                                    Atualmente sou graduado pelo Instituo Federal da Paraíba (IFPB), 
                                     ainda tenho muito o que aprender, mas sei que estou no caminho certo, 
                                     tenho certeza de que irei conhecer pessoas incríveis e que aprenderei 
                                     muito com elas e elas comigo. A minha área envolve desenvolvimento de 
@@ -54,7 +54,7 @@ const AboutViewComponent = (props) => {
                 </div>
                 <div id={styles.randomFacts}>
                     <div id={styles.facts}>
-                        <span>Random Facts</span>
+                        <span>Fatos Aleatórios</span>
                         <p> 
                             Além de programador, tenho grande paixão por desenho, música e teatro. 
                             Um dos meus passatempos é me exercitar todas as manhãs bem cedo, enquanto 

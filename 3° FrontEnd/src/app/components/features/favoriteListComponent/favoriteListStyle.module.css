@@ -3,9 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 35vh;
-    height: 90%;
-    font-size: 1.5vh;
+    font-size: 1.7vh;
 }
 
 #lang span{
@@ -17,8 +15,8 @@
     align-items: flex-end;
     height: 40%;
     position: relative;
-    top: 3.6vh;
-    left: 3.6vh;
+    top: 4.6vh;
+    left: 4.6vh;
 }
 
 #lang span:nth-child(2){
@@ -32,8 +30,8 @@
     align-items: center;
     border: 0.1vh solid white;
     color: white;
-    width: 7vh;
-    height: 9.5vh;
+    width: 9vh;
+    height: 12vh;
     cursor: default;
     /* background-color: #008854; */
     background: linear-gradient(rgb(0 0 0 / 38%) 100%, transparent), url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/3f3b5129380049.55f179a63f0d5.gif");
