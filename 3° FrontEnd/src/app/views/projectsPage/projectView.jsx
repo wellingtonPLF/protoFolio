@@ -11,18 +11,20 @@ import desenho from './../../../assets/images/programing.png'
 
 const ProjectViewComponent = (props) => {
 
+    const widthScreen = window.innerWidth
+
     return (
         <div id="projects">
+            <div>
+                <Link to="/">
+                    <div id="iconBack">
+                        <FontAwesomeIcon icon={faAnglesLeft} />
+                        <FontAwesomeIcon icon={faAngleLeft} />
+                    </div>
+                </Link>
+            </div>
             <span>
                 <div id="projectsHeader">
-                    <div id="fromProjectToMain">
-                        <Link to="/">
-                            <div id="iconBack">
-                                <FontAwesomeIcon icon={faAnglesLeft} />
-                                <FontAwesomeIcon icon={faAngleLeft} />
-                            </div>
-                        </Link>
-                    </div>
                     <div id="title">My Services</div>
                 </div>
             </span>
