@@ -53,3 +53,58 @@
     0.1vh -0.1vh 0 purple,
     -0.1vh 0.1vh 0 purple;
 }
+
+#springBoot {
+    background-image: url('./../../../../assets/images/spring-boot-logo.png');
+    background-size: 3.5vh
+}
+
+#jwt {
+    background-image: url('./../../../../assets/images/jwt-logo.png');
+    background-size: 4.5vh
+}
+
+@media screen and (max-width: 695px) {
+
+    .element{
+        width: calc(4.5 * 1.3vw);
+        height: calc(4.5 * 1.3vw);
+        padding: calc(1 * 1.3vw);
+        border: calc(0.2 * 1.3vw) solid rgba(204, 204, 204, 0.123);
+        margin: calc(0px 0.5 * 1.3vw);
+    }
+
+    #djangoFramework{
+        font-size: calc(1.3 * 1.3vw);
+        text-shadow:
+        calc(0.2 * 1.3vw) 0 0 black,
+        calc(-0.2 * 1.3vw) 0 0 black,
+        0 calc(0.2 * 1.3vw) 0 black,
+        0 calc(-0.2 * 1.3vw) 0 black,
+        calc(0.1 * 1.3vw) calc(0.1 * 1.3vw) black,
+        calc(-0.1 * 1.3vw) calc(-0.1 * 1.3vw) 0 black,
+        calc(0.1 * 1.3vw) calc(-0.1 * 1.3vw) 0 black,
+        calc(-0.1 * 1.3vw) calc(0.1 * 1.3vw) 0 black;
+    }
+
+    #netFramework {
+        font-size: calc(1.8 * 1.3vw);
+        text-shadow:
+        calc(0.2 * 1.3vw) 0 0 purple,
+        calc(-0.2 * 1.3vw) 0 0 purple,
+        0 calc(0.2 * 1.3vw) 0 purple,
+        0 calc(-0.2 * 1.3vw) 0 purple,
+        calc(0.1 * 1.3vw) calc(0.1 * 1.3vw) purple,
+        calc(-0.1 * 1.3vw) calc(-0.1 * 1.3vw) 0 purple,
+        calc(0.1 * 1.3vw) calc(-0.1 * 1.3vw) 0 purple,
+        calc(-0.1 * 1.3vw) calc(0.1 * 1.3vw) 0 purple;
+    }
+
+    #springBoot {
+        background-size: calc(3.5 * 1.3vw)
+    }
+
+    #jwt {
+        background-size: calc(4.5 * 1.3vw)
+    }
+}

@@ -15,7 +15,6 @@
 #projects > div > a {
     position: absolute;
     height: fit-content;
-    color: blue;
     z-index: 100;
     top: 3vh;
     left: 28.5vh;
@@ -175,3 +174,29 @@
     height: 42%;
 }
 /* ========================================================== */
+@media screen and (max-width: 695px) {
+    #title{
+        padding-right: 7vw;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    #title{
+        font-size: 6vw;
+    }
+
+    #projects > div > a {
+        z-index: 500;
+        top: 6vh;
+        left: 34vw;
+    }
+
+    #projects > span:nth-child(2){
+        min-width: 0px;
+        clip-path: polygon(0% 50%, 45vw 50%, 55vw 100%, 100% 100%, 100% 0%, 0% 0%);
+    }
+
+    #iconBack {
+        color: black;
+    }
+}

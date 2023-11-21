@@ -12,3 +12,9 @@ code {
     monospace;
 }
 
+
+@media screen and (max-width: 700px){
+  .splide__arrow {
+    display: none !important;
+  }
+}
