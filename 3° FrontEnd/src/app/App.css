@@ -10,13 +10,13 @@
           "footer"
 }
 
-#iconBack{
+.iconBack{
   font-size: 3vh;
   color: white;
   width: 5vh;
 }
 
-#iconBack :nth-child(2){
+.iconBack :nth-child(2){
   position: relative;
   right: 0.7vh;
 }

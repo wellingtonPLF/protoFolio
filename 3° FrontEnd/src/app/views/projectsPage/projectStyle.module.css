@@ -11,7 +11,7 @@
     border-bottom: 0.8vh solid #06b56e;
 }
 
-/* IconBack */
+/* ====================== IconBack ====================== */
 #projects > div > a {
     position: absolute;
     height: fit-content;
@@ -19,6 +19,8 @@
     top: 3vh;
     left: 28.5vh;
 }
+
+/* ======================================================= */
 
 #projects > span:nth-child(2){
     display: flex;
@@ -177,6 +179,10 @@
 @media screen and (max-width: 695px) {
     #title{
         padding-right: 7vw;
+    }
+
+    #projects > span:nth-child(3) > div{
+        margin-bottom: 5vh;
     }
 }
 

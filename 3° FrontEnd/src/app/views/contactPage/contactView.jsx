@@ -28,9 +28,9 @@ const ContactViewComponent = (props) => {
                     <div className="blackLayer">
                         <div id="upLayer">
                             <div>
-                                <div  id="goingBack">
+                                <div id="goingBack">
                                     <Link to="/">
-                                        <div id={'iconBack'}>
+                                        <div className='iconBack'>
                                             <FontAwesomeIcon icon={faAnglesLeft} />
                                             <FontAwesomeIcon icon={faAngleLeft} />
                                         </div>

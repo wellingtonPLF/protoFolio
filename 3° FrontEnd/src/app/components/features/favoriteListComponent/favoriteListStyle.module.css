@@ -33,7 +33,6 @@
     width: 9vh;
     height: 12vh;
     cursor: default;
-    /* background-color: #008854; */
     background: linear-gradient(rgb(0 0 0 / 38%) 100%, transparent), url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/3f3b5129380049.55f179a63f0d5.gif");
     background-position: center;
     background-repeat: no-repeat;
@@ -46,4 +45,38 @@
 
 .element:last-child {
     border-right: 0.2vh solid white;
+}
+
+/* ============================================================ */
+
+@media screen and (max-width: 695px) {
+
+    #lang {
+        font-size: calc(1.7 * 1.3vw);
+    }
+    
+    #lang span:nth-child(1){
+        height: 40%;
+        top: calc(4.6 * 1.3vw);
+        left: calc(4.6 * 1.3vw);
+    }
+    
+    #lang span:nth-child(2){
+        height: 60%;
+    }
+    
+    .element {
+        clip-path: polygon(0% 70%, 50% 90%, 100% 70%, 100% 30%, 50% 10%, 0% 30%);
+        border: calc(0.1 * 1.3vw) solid white;
+        width: calc(9 * 1.3vw);
+        height: calc(12 * 1.3vw);
+    }
+    
+    .element:first-child {
+        border-left: calc(0.2 * 1.3vw) solid white;
+    }
+    
+    .element:last-child {
+        border-right: calc(0.2 * 1.3vw) solid white;
+    }
 }

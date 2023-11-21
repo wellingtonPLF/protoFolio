@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './projectStyle.css';
+import styles from './projectStyle.module.css';
 import {Link} from "react-router-dom";
 import {
     faAngleLeft, faAnglesLeft, 
@@ -28,18 +28,18 @@ const ProjectViewComponent = () => {
     }, [])
 
     return (
-        <div id="projects">
+        <div id={styles.projects}>
             <div>
                 <Link to="/">
-                    <div id="iconBack">
+                    <div id={styles.iconBack} className='iconBack'>
                         <FontAwesomeIcon icon={faAnglesLeft} />
                         <FontAwesomeIcon icon={faAngleLeft} />
                     </div>
                 </Link>
             </div>
             <span>
-                <div id="projectsHeader">
-                    <div id="title">My Services</div>
+                <div id={styles.projectsHeader}>
+                    <div id={styles.title}>My Services</div>
                 </div>
             </span>
             <span>
@@ -47,11 +47,11 @@ const ProjectViewComponent = () => {
                     <ServiceListViewComponent />
                 ) : (
                     <>
-                        <div id="projectList">
+                        <div id={styles.projectList}>
                             <div>
-                                <div id="services">
+                                <div id={styles.services}>
                                     <div>
-                                        <div id="icon">
+                                        <div id={styles.icon}>
                                             <FontAwesomeIcon icon={faDisplay} />
                                         </div>
                                         <h4>Development</h4>
@@ -61,7 +61,7 @@ const ProjectViewComponent = () => {
                                         </div>
                                     </div>
                                     <div>
-                                        <div id="icon">
+                                        <div id={styles.icon}>
                                             <FontAwesomeIcon icon={faRocket} />
                                         </div>
                                         <h4>SEO optimization</h4>
@@ -71,7 +71,7 @@ const ProjectViewComponent = () => {
                                         </div>
                                     </div>
                                     <div>
-                                        <div id="icon">
+                                        <div id={styles.icon}>
                                             <FontAwesomeIcon icon={faLayerGroup} />
                                         </div>
                                         <h4>API Integration</h4>
@@ -81,21 +81,21 @@ const ProjectViewComponent = () => {
                                         </div>
                                     </div>
                                     <div>
-                                        <div id="icon">
+                                        <div id={styles.icon}>
                                             <FontAwesomeIcon icon={faLaptopCode} />
                                         </div>
                                         <h4>Responsive</h4>
                                         <div>Layouts that will work on any device big or small</div>
                                     </div>
                                     <div>
-                                        <div id="icon">
+                                        <div id={styles.icon}>
                                             <FontAwesomeIcon icon={faWandMagicSparkles} />
                                         </div>
                                         <h4>DataAnalyse</h4>
                                         <div>Complex data into a new way to visualize and understanding it by easy graphics statistcs</div>
                                     </div>
                                     <div>
-                                        <div id="icon">
+                                        <div id={styles.icon}>
                                             <FontAwesomeIcon icon={faScrewdriverWrench} />
                                         </div>
                                         <h4>Maintainance</h4>
@@ -111,8 +111,8 @@ const ProjectViewComponent = () => {
                                 </h4>
                             </div>
                         </div>
-                        <div id="tecnologies">
-                            <div id="outdoor">
+                        <div id={styles.tecnologies}>
+                            <div id={styles.outdoor}>
                                 <div>
                                     <img src={desenho}/>
                                 </div>
@@ -121,7 +121,7 @@ const ProjectViewComponent = () => {
                                     <p>Web Development Tools To Use for Web Development</p>
                                 </div>
                             </div>
-                            <div id="skills">
+                            <div id={styles.skills}>
                                 <CircleListComponent />
                             </div>
                         </div>

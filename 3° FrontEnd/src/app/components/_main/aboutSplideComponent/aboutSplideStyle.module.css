@@ -1,0 +1,205 @@
+
+#aboutPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#aboutPage > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+    width: 70vh;
+}
+
+
+#containerUl {
+    display: flex;
+    align-items: center;
+    height: 55vh !important;
+}
+
+
+#containerUl > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+#mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainContainer > div {
+    display: flex;
+    justify-content: space-evenly;
+    height: 90%;
+    width: 125vh;
+}
+
+#leftContainer {
+    width: 65%;
+}
+
+#leftContainer h3{
+    font-size: 2.2vh;
+    margin-top: 0px;
+    margin-bottom: 1vh;
+}
+
+#leftContainer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: unset;
+    margin-top: 1vh;
+    font-size: 1.6vh;
+    width: fit-content;
+    padding: 0.5vh 1.2vh 0.8vh 1vh;
+    border-radius: 0.5vh;
+    color: white;
+    background-color: #00a568;
+}
+
+#leftContainer > :nth-child(2) {
+    margin: 0 5.5vh 0 1vh;
+}
+
+#leftContainer > div:first-child > div {
+    font-size: 1.6vh;
+}
+
+#rightContainer {
+    width: 80%;
+    height: 100%;
+}
+
+#video{
+    width: 100%;
+    height: 100%;
+}
+
+#video iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#rightContainer h4 {
+    font-size: 2vh;
+    font-weight: 400;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+#rightContainer > div:first-child {
+    height: 60%;
+}
+
+#rightContainer > div:last-child {
+    display: flex;
+    height: calc(100% - 60%);
+}
+
+#rightContainer > div:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#rightContainer > div:last-child > div:first-child {
+    width: 50%;
+    height: 100%;
+}
+
+#rightContainer > div:last-child > div:first-child > div {
+    font-size: 1.6vh;
+}
+
+#desktop {
+    width: 50%;
+    height: 90%;
+    background: url("./../../../../assets/images/desktop.jpg") center/cover;
+}
+/* ================================================================================= */
+
+@media screen and (max-width: 695px) {
+    #aboutPage > div{
+        width: calc(70 * 1.3vw);
+    }
+    
+    #containerUl {
+        height: calc(55 * 1.3vw) !important;
+    }
+    
+    #containerUl > li {
+        height: 90%;
+    }
+    
+    #mainContainer > div {
+        height: 90%;
+        width: calc(125 * 1.3vw);
+    }
+    
+    #leftContainer {
+        width: 65%;
+    }
+    
+    #leftContainer h3{
+        font-size: calc(2.2 * 1.3vw);
+        margin-bottom: calc(1 * 1.3vw);
+    }
+    
+    #leftContainer a {
+        margin-top: calc(1 * 1.3vw);
+        font-size: calc(1.6 * 1.3vw);
+        padding: calc(0.5 * 1.3vw) calc(1.2 * 1.3vw) calc(0.8 * 1.3vw) calc(1 * 1.3vw);
+        border-radius: calc(0.5 * 1.3vw);
+    }
+    
+    #leftContainer > :nth-child(2) {
+        margin: 0 calc(5.5 * 1.3vw) 0 calc(1 * 1.3vw);
+    }
+
+    #leftContainer > div:first-child > div {
+        font-size: calc(1.6 * 1.3vw);
+    }
+    
+    #rightContainer {
+        width: 80%;
+        height: 100%;
+    }
+    
+    #rightContainer h4 {
+        font-size: calc(2 * 1.3vw);
+        margin-top: calc(1 * 1.3vw);
+        margin-bottom: calc(1 * 1.3vw);
+    }
+    
+    #rightContainer > div:first-child {
+        height: 60%;
+    }
+    
+    #rightContainer > div:last-child {
+        height: calc(100% - 60%);
+    }    
+    
+    #rightContainer > div:last-child > div:first-child {
+        width: 50%;
+        height: 100%;
+    }
+
+    #rightContainer > div:last-child > div:first-child > div {
+        font-size: calc(1.6 * 1.3vw);
+    }
+    
+    #desktop {
+        width: 50%;
+        height: 90%;
+    }
+}

@@ -148,7 +148,6 @@
         width:calc(75 * 1.3vw);
         padding: calc(5 * 1.3vw) calc(2 * 1.3vw);
         border-radius: calc(2 * 1.3vw);
-        margin:calc( 0 5 * 1.3vw);
     }
     
     #projectList > div > h4 {
