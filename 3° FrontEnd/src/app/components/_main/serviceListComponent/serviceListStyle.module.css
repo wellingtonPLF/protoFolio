@@ -1,62 +1,13 @@
 
-
-
-#projects{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    box-sizing: border-box;
-    border-bottom: 0.8vh solid #06b56e;
+#grab {
+    cursor: grab;
+    width: 90vh;
 }
 
-/* IconBack */
-#projects > div > a {
-    position: absolute;
-    height: fit-content;
-    color: blue;
-    z-index: 100;
-    top: 3vh;
-    left: 28.5vh;
-}
-
-#projects > span:nth-child(2){
-    display: flex;
-    justify-content: center;
-    height: 10vh;
-    min-width: 42vh;
-    background-color: black;
-    clip-path: polygon(0% 50%, 25vh 50%, 30vh 100%, 100% 100%, 100% 0%, 0% 0%);
-    box-sizing: border-box;
-    border-bottom: 0.8vh solid #06b56e;
-}
-
-#projects > span:nth-child(3){
+#grab li {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 68vh;
-    width: 100%;
-}
-
-#projectsHeader{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    max-width: 98vh;
-}
-
-#title{
-    display: flex;
-    font-size: 3.5vh;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 10vh;
-    height: 100%;
-    color: white;
 }
 
 #projectList{
@@ -175,3 +126,87 @@
     height: 42%;
 }
 /* ========================================================== */
+
+@media screen and (max-width: 900px) {
+    #grab {
+        margin-top: 1.2vh;
+        width:70vh;
+    }
+    
+    #services {
+        padding-left: 3vh;
+    }
+}
+
+@media screen and (max-width: 695px) {
+    #grab {
+        width:calc(70 * 1.3vw);
+    }
+
+    #projectList{  
+        width:calc(75 * 1.3vw);
+        padding: calc(5 * 1.3vw) calc(2 * 1.3vw);
+        border-radius: calc(2 * 1.3vw);
+        margin:calc( 0 5 * 1.3vw);
+    }
+    
+    #projectList > div > h4 {
+        font-size: calc(1.5 * 1.3vw);
+    }
+    
+    #icon {
+        margin-left:calc( 0.3 * 1.3vw);
+        font-size:calc( 2 * 1.3vw);
+    }
+    
+    #services > div {
+        width: 40%;
+        margin-right: calc(2.5 * 1.3vw);
+    }
+    
+    #services > div > h4 {
+        font-size: calc(1.5 * 1.3vw);
+        margin-top: calc(1.2 * 1.3vw);
+        margin-bottom: calc(1 * 1.3vw);
+    }
+    
+    #services > div > :last-child{
+        font-size: calc(1.3 * 1.3vw);
+    }
+    
+    #tecnologies{
+        width: calc(52 * 1.3vw);
+        height: calc(40 * 1.3vw);
+        min-height: calc(40 * 1.3vw);
+        margin: calc(0 5 * 1.3vw);
+    }
+    
+    #outdoor{
+        border-radius: calc(1 * 1.3vw);
+        width: 100%;
+        height: 45%;
+    }
+    
+    #outdoor div:nth-child(1){
+        width: 40%;
+        height: 100%;
+    }
+    
+    #outdoor img{
+        width: calc(10 * 1.3vw);
+        height: calc(10 * 1.3vw);
+    }
+
+    #outdoor div:nth-child(2) h2{
+        font-size: calc(2.6 * 1.3vw);
+    }
+    
+    #outdoor div:nth-child(2) p{
+        margin-top: calc(0.5 * 1.3vw);
+        font-size: calc(1.6 * 1.3vw);
+    }
+    
+    #skills{
+        height: 42%;
+    }
+}

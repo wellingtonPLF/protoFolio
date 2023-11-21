@@ -16,6 +16,7 @@
         "@fortawesome/react-fontawesome": "^0.2.0",
         "axios": "^1.3.6",
         "phosphor-react": "^1.4.1",
+        "@splidejs/splide": "^4.1.4",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-router-dom": "^6.10.0",
