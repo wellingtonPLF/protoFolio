@@ -10,30 +10,30 @@
 }
 
 #aboutPage > div:first-child {
+    display: flex;
+    justify-content: center;
     background-color: black;
     width: 100%;
     height: 15%;
     color: white;
     box-sizing: border-box;
     border-bottom: 1vh solid #06b56e;
-    clip-path: polygon(0% 100%, 45% 100%, 48.5% 50%, 100% 50%, 100% 0%, 0% 0%);
+    clip-path: polygon(0% 100%, 75vh 100%, 80.5vh 50%, 100% 50%, 100% 0%, 0% 0%);
 }
 
 #aboutPage > div:first-child > div {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 30vh;
+    margin-right: 87vh;
+    align-items: center;  
 } 
-
-#getBack{
-    top: 3vh;
-    left: 38vh;
-    position: absolute;
-}
 
 #aboutPage > div:first-child > div h1{
     font-size: 4.2vh;
-    margin-right: 38vh;
     font-weight: 400;
+    margin-left: 9vw;
+    width: fit-content;
 }
 
 #aboutPage > span:last-child {
@@ -148,4 +148,60 @@
     width: 50%;
     height: 85%;
     background: url("./../../../assets/images/desktop.jpg") center/cover;
+}
+
+@media screen and (max-width: 1230px) {
+    #aboutPage > div:first-child {
+        justify-content: flex-start;
+    }
+
+    #aboutPage > div:first-child > div {
+        margin-right: 0px;
+    }
+
+    #getBack {
+        margin-left: 5vw;
+    }
+
+    #aboutPage > div:first-child > div h1{
+        margin-left: 20vw;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    #aboutPage > div:first-child {
+        clip-path: polygon(0% 100%, 60vh 100%, 65.5vh 50%, 100% 50%, 100% 0%, 0% 0%);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #aboutPage > div:first-child {
+        clip-path: polygon(0% 100%, 60vw 100%, 68vw 50%, 100% 50%, 100% 0%, 0% 0%);
+    }
+
+    #aboutPage > div:first-child > div {
+        margin-right: 0px;
+        width: fit-content;
+        justify-content: flex-start;
+    }
+
+    #getBack {
+        margin-left: 5vw;
+    }
+
+    #aboutPage > div:first-child > div h1{
+        margin-left: 25vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #aboutPage > div:first-child > div h1{
+        margin-left: 15vw;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    #aboutPage > div:first-child {
+        clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+    }
 }
