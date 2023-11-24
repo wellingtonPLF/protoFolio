@@ -81,17 +81,17 @@ const ProjectViewComponent = () => {
                                     </div>
                                     <div>
                                         <div id={styles.icon}>
-                                            <FontAwesomeIcon icon={faLaptopCode} />
-                                        </div>
-                                        <h4>Responsive</h4>
-                                        <div>Designs optimized for seamless functionality on devices of all sizes, whether large or small.</div>
-                                    </div>
-                                    <div>
-                                        <div id={styles.icon}>
                                             <FontAwesomeIcon icon={faWandMagicSparkles} />
                                         </div>
                                         <h4>DataAnalyse</h4>
                                         <div>Transforming complex data into easily understandable graphics and statistics for a more intuitive and insightful visualization.</div>
+                                    </div>
+                                    <div>
+                                        <div id={styles.icon}>
+                                            <FontAwesomeIcon icon={faLaptopCode} />
+                                        </div>
+                                        <h4>Responsive</h4>
+                                        <div>Designs optimized for seamless functionality on devices of all sizes, whether large or small.</div>
                                     </div>
                                     <div>
                                         <div id={styles.icon}>

@@ -6,15 +6,17 @@
 }
 
 #emailMessage{
-    color: black;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    color: black;
     margin: auto;
     width: 98%;
     font-family: 'Alkatra', sans-serif;
 }
 
 #emailMessage p {
+    width: 94%;
     font-weight: 620;
     font-size: 1.7vh;
     margin: 0.8vh 0 1.5vh 0;
@@ -23,7 +25,8 @@
 #emailMessage input {
     border: 0;
     margin-bottom: 1vh;
-    padding: 0.4vh 1vh 0.4vh 1vh;
+    padding-top: 0.4vh;
+    padding-bottom: 0.4vh;
 }
 
 #emailMessage textarea{
@@ -33,10 +36,12 @@
 #emailMessage input, textarea{
     padding-left: 0.5vh;
     border-radius: 0.5vh;
+    margin: 0.3vh 0px;
+    border: unset;
+    width: 92%;
     font-size: 1.2vh;
     font-family: san-serif;
     background-color: #F7F6FE;
-    border-color: transparent;
     font-family: 'Alkatra', sans-serif;
 }
 

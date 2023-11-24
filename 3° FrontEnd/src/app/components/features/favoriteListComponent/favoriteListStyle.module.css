@@ -11,6 +11,24 @@
     justify-content: center;
 }
 
+#favLang{
+    display: flex;
+    align-items: center;
+    font-size: 1.7vh;
+    font-family: 'Alkatra', sans-serif;
+    width: fit-content;
+}
+
+#favLang svg{
+    transform: rotate(180deg);
+    margin-right: 0.5vh;
+}
+
+#favLang > div{
+    height: 2.4vh;
+    border-bottom: 0.4vh solid black;
+}
+
 #lang span:nth-child(1){
     align-items: flex-end;
     height: 40%;
@@ -78,5 +96,23 @@
     
     .element:last-child {
         border-right: calc(0.2 * 1.3vw) solid white;
+    }
+
+    #favLang{
+        display: flex;
+        align-items: center;
+        font-size: calc(1.7 * 1.3vw);
+        font-family: 'Alkatra', sans-serif;
+        width: fit-content;
+    }
+    
+    #favLang svg{
+        transform: rotate(180deg);
+        margin-right: calc(0.5 * 1.3vw);
+    }
+    
+    #favLang > div{
+        height: calc(2.4 * 1.3vw);
+        border-bottom: calc(0.4 * 1.3vw) solid black;
     }
 }

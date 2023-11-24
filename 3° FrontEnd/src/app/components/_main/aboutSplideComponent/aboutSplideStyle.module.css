@@ -14,7 +14,6 @@
     width: 70vh;
 }
 
-
 #containerUl {
     display: flex;
     align-items: center;
@@ -72,7 +71,7 @@
 }
 
 #leftContainer > div:first-child > div {
-    font-size: 1.6vh;
+    font-size: 1.65vh;
     font-family: 'Nova Square', sans-serif;
 }
 
@@ -122,6 +121,7 @@
 
 #rightContainer > div:last-child > div:first-child > div {
     font-size: 1.6vh;
+    margin-right: 1.2vw;
     font-family: 'Nova Square', sans-serif;
 }
 
@@ -135,6 +135,10 @@
 @media screen and (max-width: 695px) {
     #aboutPage > div{
         width: calc(70 * 1.3vw);
+    }
+
+    #aboutPage > div > div{
+        margin-bottom: 5vw;
     }
     
     #containerUl {
@@ -171,7 +175,7 @@
     }
 
     #leftContainer > div:first-child > div {
-        font-size: calc(1.6 * 1.3vw);
+        font-size: calc(1.65 * 1.3vw);
     }
     
     #rightContainer {
@@ -181,8 +185,6 @@
     
     #rightContainer h4 {
         font-size: calc(2 * 1.3vw);
-        margin-top: calc(1 * 1.3vw);
-        margin-bottom: calc(1 * 1.3vw);
     }
     
     #rightContainer > div:first-child {
@@ -199,7 +201,7 @@
     }
 
     #rightContainer > div:last-child > div:first-child > div {
-        font-size: calc(1.6 * 1.3vw);
+        font-size: calc(1.65 * 1.3vw);
     }
     
     #desktop {

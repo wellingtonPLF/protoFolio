@@ -17,7 +17,7 @@
     height: fit-content;
     z-index: 100;
     top: 2.5vh;
-    left: 28.5vh;
+    left: 29vh;
 }
 
 /* ======================================================= */
@@ -29,7 +29,7 @@
     min-width: 42vh;
     font-family: 'Alkatra', sans-serif;
     background-color: black;
-    clip-path: polygon(0% 50%, 25vh 50%, 30vh 100%, 100% 100%, 100% 0%, 0% 0%);
+    clip-path: polygon(0% 50%, 26vh 50%, 30vh 100%, 100% 100%, 100% 0%, 0% 0%);
     box-sizing: border-box;
     border-bottom: 0.8vh solid #06b56e;
 }

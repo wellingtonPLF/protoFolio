@@ -64,19 +64,22 @@ const ServiceListViewComponent = () => {
                                                     the integration with any api or the creation of one itself
                                                 </div>
                                             </div>
-                                            <div>
-                                                <div id={styles.icon}>
-                                                    <FontAwesomeIcon icon={faLaptopCode} />
-                                                </div>
-                                                <h4>Responsive</h4>
-                                                <div>Layouts that will work on any device big or small</div>
-                                            </div>
+                                            
                                             <div>
                                                 <div id={styles.icon}>
                                                     <FontAwesomeIcon icon={faWandMagicSparkles} />
                                                 </div>
                                                 <h4>DataAnalyse</h4>
                                                 <div>Complex data into a new way to visualize and understanding it by easy graphics statistcs</div>
+                                            </div>
+                                            <div>
+                                                <div id={styles.icon}>
+                                                    <FontAwesomeIcon icon={faLaptopCode} />
+                                                </div>
+                                                <h4>Responsive</h4>
+                                                <div>
+                                                    Designs optimized for seamless functionality on devices of all sizes, whether large or small.
+                                                </div>
                                             </div>
                                             <div>
                                                 <div id={styles.icon}>
@@ -88,6 +91,7 @@ const ServiceListViewComponent = () => {
                                                     ensuring it remains up to date and user-friendly
                                                 </div>
                                             </div>
+                                            
                                         </div>
                                         <h4>
                                             "As a Frontend developer, My goal as a employee is to create the right interfaces that

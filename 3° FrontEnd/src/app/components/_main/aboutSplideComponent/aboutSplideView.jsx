@@ -35,7 +35,7 @@ const AboutSplideComponent = () => {
                                             <h4>Fatos Aleatórios</h4>
                                             <div>
                                             In addition to being a programmer, 
-                                            I have a great passion for drawing, music, and theater. 
+                                            I also have a great passion for drawing, music, and theater. 
                                             One of my hobbies is exercising every early morning, 
                                             while I use the evenings to study new languages in which I am interested.
                                             </div>
