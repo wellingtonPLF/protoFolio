@@ -26,16 +26,18 @@ const AboutViewComponent = () => {
     return (
         <div id={styles.aboutPage}>
             <div>
-                <div>
-                    <div id={styles.getBack}>
-                        <Link to="/">
-                            <div className='iconBack'>
-                                <FontAwesomeIcon icon={faAnglesLeft} />
-                                <FontAwesomeIcon icon={faAngleLeft} />
-                            </div>
-                        </Link>
+                <div id={styles.aboutCentral}>
+                    <div>
+                        <div id={styles.getBack}>
+                            <Link to="/">
+                                <div className='iconBack'>
+                                    <FontAwesomeIcon icon={faAnglesLeft} />
+                                    <FontAwesomeIcon icon={faAngleLeft} />
+                                </div>
+                            </Link>
+                        </div>
+                        <h1>About</h1>
                     </div>
-                    <h1>About</h1>
                 </div>
             </div>
             <span>

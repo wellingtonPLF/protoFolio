@@ -37,7 +37,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 68vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -187,22 +187,36 @@
 }
 
 @media screen and (max-width: 570px) {
+
+    #projects > div > a {
+        z-index: 500;
+        top: 6vh;
+        left: 16vh;
+    }
+
+    #projects > span:nth-child(2){
+        min-width: 0px;
+        clip-path: polygon(0% 50%, 20vh 50%, 24vh 100%, 100% 100%, 100% 0%, 0% 0%);
+    }
+
+    #iconBack {
+        color: black;
+    }
+}
+
+@media screen and (max-width: 440px) {
     #title{
-        font-size: 6vw;
+        font-size: 3vh;
     }
 
     #projects > div > a {
         z-index: 500;
         top: 6vh;
-        left: 34vw;
+        left: 7vh;
     }
 
     #projects > span:nth-child(2){
-        min-width: 0px;
-        clip-path: polygon(0% 50%, 45vw 50%, 55vw 100%, 100% 100%, 100% 0%, 0% 0%);
-    }
-
-    #iconBack {
-        color: black;
+        min-width: 320px;
+        clip-path: polygon(0% 50%, 11vh 50%, 15vh 100%, 100% 100%, 100% 0%, 0% 0%);
     }
 }
