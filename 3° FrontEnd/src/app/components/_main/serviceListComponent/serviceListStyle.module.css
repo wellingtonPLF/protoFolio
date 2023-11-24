@@ -16,6 +16,7 @@
     width: 75vh;
     padding: 5vh 2vh;
     border-radius: 2vh;
+    font-family: 'Nova Square', sans-serif;
     margin: 0 5vh;
     color: white;
     background-color: #0a0b10;
@@ -32,6 +33,7 @@
     color: white;
     font-size: 1.5vh;
     text-align: center;
+    font-family: curseve;
 }
 
 #icon {
@@ -74,6 +76,7 @@
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+    font-family: 'Alkatra', sans-serif;
 }
 
 #outdoor{
@@ -116,6 +119,7 @@
     margin-top: 0.5vh;
     color: white;
     font-size: 1.6vh;
+    font-family: curseve;
 }
 
 #skills{

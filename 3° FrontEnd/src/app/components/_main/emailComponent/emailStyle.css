@@ -10,7 +10,8 @@
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 95%;
+    width: 98%;
+    font-family: 'Alkatra', sans-serif;
 }
 
 #emailMessage p {
@@ -36,6 +37,7 @@
     font-family: san-serif;
     background-color: #F7F6FE;
     border-color: transparent;
+    font-family: 'Alkatra', sans-serif;
 }
 
 #btnSendMessage{
@@ -49,8 +51,9 @@
     border: none;
     color: white;
     font-size: 1vh;
-    margin: 1.5vh 1.1vh 0.5vh 0px;
+    margin: 1.5vh 0.5vh 0.5vh 0px;
     padding: 1.2vh;
     padding-inline: 1.5vh;
     border-radius: 0.5vh;
+    font-family: 'Nova Square', sans-serif;
 }

@@ -51,12 +51,12 @@ const AboutViewComponent = () => {
                                     <div>
                                         <h3>Wellington Pessoa de Lima Filho</h3>
                                         <div>
-                                            Atualmente sou graduado pelo Instituo Federal da Paraíba (IFPB), 
-                                            ainda tenho muito o que aprender, mas sei que estou no caminho certo, 
-                                            tenho certeza de que irei conhecer pessoas incríveis e que aprenderei 
-                                            muito com elas e elas comigo. A minha área envolve desenvolvimento de 
-                                            software e mesmo não possuindo tanta experiência sei que sou capaz de
-                                            ir atrás daquilo que é relevante e que me fascina.
+                                        I am currently a graduate from the Federal Institute of Paraíba (IFPB). 
+                                        I still have much to learn, but I know I am on the right path. 
+                                        I am confident that I will meet amazing people and learn a great deal from them, 
+                                        just as they will from me. My field involves software development, 
+                                        and even though I may not have extensive experience, 
+                                        I believe I am capable of pursuing what is relevant and fascinating to me.
                                         </div>
                                         <a href='https://drive.google.com/file/d/1nyRhUYTHKsw6IyxWUqKotTsbomLNaPPj/view?usp=drive_link' target='_blank'>resume</a>
                                     </div>
@@ -70,10 +70,10 @@ const AboutViewComponent = () => {
                                         <div>
                                             <h4>Fatos Aleatórios</h4>
                                             <div>
-                                                Além de programador, tenho grande paixão por desenho, música e teatro. 
-                                                Um dos meus passatempos é me exercitar todas as manhãs bem cedo, enquanto 
-                                                aproveito as noites para estudar novas línguas no qual tenho
-                                                interesse.
+                                            In addition to being a programmer, 
+                                            I have a great passion for drawing, music, and theater. 
+                                            One of my hobbies is exercising every early morning, 
+                                            while I use the evenings to study new languages in which I am interested.
                                             </div>
                                         </div>
                                         <div id={styles.desktop}></div>

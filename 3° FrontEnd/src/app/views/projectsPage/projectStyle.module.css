@@ -16,7 +16,7 @@
     position: absolute;
     height: fit-content;
     z-index: 100;
-    top: 3vh;
+    top: 2.5vh;
     left: 28.5vh;
 }
 
@@ -27,6 +27,7 @@
     justify-content: center;
     height: 10vh;
     min-width: 42vh;
+    font-family: 'Alkatra', sans-serif;
     background-color: black;
     clip-path: polygon(0% 50%, 25vh 50%, 30vh 100%, 100% 100%, 100% 0%, 0% 0%);
     box-sizing: border-box;
@@ -68,6 +69,7 @@
     border-radius: 2vh;
     margin: 0 5vh;
     color: white;
+    font-family: 'Nova Square', sans-serif;
     background-color: #0a0b10;
 }
 
@@ -81,6 +83,7 @@
     width: 80%;
     color: white;
     font-size: 1.5vh;
+    font-family: curseve;
     text-align: center;
 }
 
@@ -159,6 +162,7 @@
     margin-bottom: 0px;
     font-weight: 500;
     font-size: 2.6vh;
+    font-family: 'Alkatra', sans-serif;
     color: white
 }
 
@@ -166,6 +170,7 @@
     margin-top: 0.5vh;
     color: white;
     font-size: 1.6vh;
+    font-family: curseve;
 }
 
 #skills{

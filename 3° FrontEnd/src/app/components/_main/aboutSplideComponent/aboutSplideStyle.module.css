@@ -49,7 +49,8 @@
 #leftContainer h3{
     font-size: 2.2vh;
     margin-top: 0px;
-    margin-bottom: 1vh;
+    margin-bottom: 0;
+    font-family: 'Alkatra', sans-serif;
 }
 
 #leftContainer a {
@@ -72,6 +73,7 @@
 
 #leftContainer > div:first-child > div {
     font-size: 1.6vh;
+    font-family: 'Nova Square', sans-serif;
 }
 
 #rightContainer {
@@ -93,7 +95,8 @@
     font-size: 2vh;
     font-weight: 400;
     margin-top: 1vh;
-    margin-bottom: 1vh;
+    margin-bottom: 0;
+    font-family: 'Alkatra', sans-serif;
 }
 
 #rightContainer > div:first-child {
@@ -119,6 +122,7 @@
 
 #rightContainer > div:last-child > div:first-child > div {
     font-size: 1.6vh;
+    font-family: 'Nova Square', sans-serif;
 }
 
 #desktop {
