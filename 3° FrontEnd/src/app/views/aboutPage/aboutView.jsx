@@ -39,6 +39,7 @@ const AboutViewComponent = () => {
                         <h1>About</h1>
                     </div>
                 </div>
+                <div></div>
             </div>
             <span>
                 { windowScreen ? (

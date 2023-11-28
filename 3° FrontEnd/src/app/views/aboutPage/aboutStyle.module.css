@@ -12,35 +12,48 @@
 #aboutPage > div:first-child {
     display: flex;
     justify-content: center;
-    background-color: black;
     width: 100%;
     height: 15%;
     font-family: Alkatra;
     position: relative;
     color: white;
     box-sizing: border-box;
-    border-bottom: 1vh solid #06b56e;
-    clip-path: polygon(0% 100%, 75vh 100%, 80.5vh 50%, 100% 50%, 100% 0%, 0% 0%);
+    
 }
 
 #aboutCentral {
-    width: 117vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 42%;
+    background-color: black;
+    box-sizing: border-box;
+    border-bottom: 0.9vh solid #06b56e;
 }
 
 #aboutCentral > div {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 37vh;
-    height: 100%;
+    justify-content: space-between;
+    height: 90%;
+    width: 41vh;
+    margin-left: 2vh;
 }
 
-#aboutCentral h1{
+#aboutCentral h1 {
     font-size: 4.2vh;
-    left: 60vh;
-    position: absolute;
     font-weight: 400;
-    width: fit-content;
+    margin-right: 4vh;
+}
+
+#aboutPage > div:first-child > div:nth-child(2) {
+    height: 100%;
+    width: 60%;
+    box-sizing: border-box;
+    border-bottom: 0.9vh solid #06b56e;
+    background-color: black;
+    clip-path: polygon(-1% 111%, 5vh 50%, 100% 50%, 100% 0%, -1% -1%);
 }
 
 #aboutPage > span:last-child {
@@ -161,48 +174,28 @@
     background: url("./../../../assets/images/desktop.jpg") center/cover;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 700px) {
     #aboutCentral {
-        width: auto;
+        width: 60%;
     }
 
-    #aboutCentral > div{
-        width: 57vh;
-    }
-}
-
-@media screen and (max-width: 1065px) {
-    #aboutCentral h1{
-        left: 49vh;
-    }
-
-    #aboutPage > div:first-child {
-        clip-path: polygon(0% 100%, 60vh 100%, 65.5vh 50%, 100% 50%, 100% 0%, 0% 0%);
+    #aboutPage > div:first-child > div:nth-child(2) {
+        width: 42%;
     }
 }
 
-@media screen and (max-width: 800px) {
-    #getBack {
-        position: absolute;
-        left: 15vw;
+@media screen and (max-width: 450px) {
+    #aboutCentral {
+        width: 100%;
     }
 
     #aboutCentral > div {
-        width: auto;
+        width: 100%;
+        justify-content: space-around;
     }
-    
-    #aboutCentral h1{
-        position: static;
-    }
-    
-    #aboutPage > div:first-child {
-        clip-path: polygon(0% 100%, 60vw 100%, 68vw 50%, 100% 50%, 100% 0%, 0% 0%);
-    }
-}
 
-@media screen and (max-width: 445px) {
-    #aboutPage > div:first-child {
-        min-width: 320px;
-        clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+    #aboutPage > div:first-child > div:nth-child(2) {
+        display: none;
+        clip-path: unset;
     }
 }

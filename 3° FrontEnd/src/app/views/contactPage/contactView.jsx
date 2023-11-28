@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useCallback} from 'react';
+import React, { useState } from 'react';
 import './contactStyle.css';
 import EmailComponent from "./../../components/_main/emailComponent/emailScript"
 import {faAngleLeft, faAnglesLeft} from "@fortawesome/free-solid-svg-icons";
