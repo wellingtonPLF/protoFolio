@@ -16,7 +16,7 @@ const MenuComponent = () => {
             <Link to="/about">
                 <FontAwesomeIcon title='AboutPage' icon={faEye} />
             </Link>
-            <Link to="/projects">
+            <Link to="/expertises">
                 <FontAwesomeIcon title='Projects' icon={faCube} />
             </Link>
         </div>

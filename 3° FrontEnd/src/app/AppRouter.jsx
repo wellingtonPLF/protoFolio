@@ -3,7 +3,7 @@ import {Route, BrowserRouter, Routes} from "react-router-dom";
 import MainScreenComponent from './views/mainPage/mainScript';
 import ContactScreenComponent from './views/contactPage/contactScript';
 import AboutScreenComponent from './views/aboutPage/aboutScript';
-import ProjectScreenComponent from './views/projectsPage/projectScript';
+import ExpertiseScreenComponent from './views/expertisePage/expertiseScript';
 import TestScreenComponent from "./views/testPage/testScript";
 
 const AppRouter = () => {
@@ -14,7 +14,7 @@ const AppRouter = () => {
                 <Route element = { <ContactScreenComponent />}  path="/contact" />
                 <Route element = { <AboutScreenComponent />}  path="/about" />
                 <Route element = { <TestScreenComponent />}  path="/test" />
-                <Route element = { <ProjectScreenComponent />}  path="/projects" />
+                <Route element = { <ExpertiseScreenComponent />}  path="/expertises" />
             </Routes>
         </BrowserRouter>
     )

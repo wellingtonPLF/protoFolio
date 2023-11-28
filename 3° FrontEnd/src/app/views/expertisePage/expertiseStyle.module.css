@@ -1,7 +1,7 @@
 
 
 
-#projects{
+#expertises{
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -12,7 +12,7 @@
 }
 
 /* ====================== IconBack ====================== */
-#projects > div > a {
+#expertises > div > a {
     position: absolute;
     height: fit-content;
     z-index: 100;
@@ -22,7 +22,7 @@
 
 /* ======================================================= */
 
-#projects > span:nth-child(2){
+#expertises > span:nth-child(2){
     display: flex;
     justify-content: center;
     height: 10vh;
@@ -34,7 +34,7 @@
     border-bottom: 0.8vh solid #06b56e;
 }
 
-#projects > span:nth-child(3){
+#expertises > span:nth-child(3){
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +42,7 @@
     width: 100%;
 }
 
-#projectsHeader{
+#expertisesHeader{
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -61,7 +61,7 @@
     color: white;
 }
 
-#projectList{
+#expertiseList{
     display: flex;
     align-items: center;    
     width: 75vh;
@@ -73,13 +73,13 @@
     background-color: #0a0b10;
 }
 
-#projectList > div {
+#expertiseList > div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#projectList > div > h4 {
+#expertiseList > div > h4 {
     width: 80%;
     color: white;
     font-size: 1.5vh;
@@ -186,20 +186,20 @@
         padding-right: 7vw;
     }
 
-    #projects > span:nth-child(3) > div{
+    #expertises > span:nth-child(3) > div{
         margin-bottom: 5vh;
     }
 }
 
 @media screen and (max-width: 570px) {
 
-    #projects > div > a {
+    #expertises > div > a {
         z-index: 500;
         top: 6vh;
         left: 16vh;
     }
 
-    #projects > span:nth-child(2){
+    #expertises > span:nth-child(2){
         min-width: 0px;
         clip-path: polygon(0% 50%, 20vh 50%, 24vh 100%, 100% 100%, 100% 0%, 0% 0%);
     }
@@ -214,13 +214,13 @@
         font-size: 3vh;
     }
 
-    #projects > div > a {
+    #expertises > div > a {
         z-index: 500;
         top: 6vh;
         left: 7vh;
     }
 
-    #projects > span:nth-child(2){
+    #expertises > span:nth-child(2){
         min-width: 320px;
         clip-path: polygon(0% 50%, 11vh 50%, 15vh 100%, 100% 100%, 100% 0%, 0% 0%);
     }

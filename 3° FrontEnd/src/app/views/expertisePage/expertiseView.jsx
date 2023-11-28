@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import styles from './projectStyle.module.css';
+import styles from './expertiseStyle.module.css';
 import {Link} from "react-router-dom";
 import {
     faAngleLeft, faAnglesLeft, 
     faDisplay, faRocket, faLayerGroup, faLaptopCode, faScrewdriverWrench, faWandMagicSparkles
 } from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import CircleListComponent from './../../components/features/circleListComponent/circleListScript';
+import CircleListComponent from '../../components/features/circleListComponent/circleListScript';
 import desenho from './../../../assets/images/programing.png'
 import ServiceListViewComponent from '../../components/_main/serviceListComponent/serviceListView';
 
-const ProjectViewComponent = () => {
+const ExpertiseViewComponent = () => {
 
     const [windowScreen, setWindowScreen] = useState(false)
 
@@ -28,7 +28,7 @@ const ProjectViewComponent = () => {
     }, [])
 
     return (
-        <div id={styles.projects}>
+        <div id={styles.expertises}>
             <div>
                 <Link to="/">
                     <div id={styles.iconBack} className='iconBack'>
@@ -38,8 +38,8 @@ const ProjectViewComponent = () => {
                 </Link>
             </div>
             <span>
-                <div id={styles.projectsHeader}>
-                    <div id={styles.title}>My Services</div>
+                <div id={styles.expertisesHeader}>
+                    <div id={styles.title}>Expertise</div>
                 </div>
             </span>
             <span>
@@ -47,7 +47,7 @@ const ProjectViewComponent = () => {
                     <ServiceListViewComponent />
                 ) : (
                     <>
-                        <div id={styles.projectList}>
+                        <div id={styles.expertiseList}>
                             <div>
                                 <div id={styles.services}>
                                     <div>
@@ -129,4 +129,4 @@ const ProjectViewComponent = () => {
     );
 };
 
-export default ProjectViewComponent;
+export default ExpertiseViewComponent;
