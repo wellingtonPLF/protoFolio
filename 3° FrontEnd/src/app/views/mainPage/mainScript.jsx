@@ -15,8 +15,8 @@ class MainScreenComponent extends Component {
         gitHubService.listMains().then(
             it => {
                 const result =  it.map((element) => {
-                    let {id, name, language, html_url} = element;
-                    return {id, name, language, html_url}
+                    let {id, name, language, html_url, img} = element;
+                    return {id, name, language, html_url, img}
                 })
                 this.setState({
                     projects: result

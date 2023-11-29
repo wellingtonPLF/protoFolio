@@ -158,30 +158,48 @@
 }
 /* ====================================================== */
 .project {
+    position: relative;
     background-position: center;
 }
 
+/* 
 .mainProjects a:nth-child(1) .project{
-    background-image: url("/mym.png");
+    background-image: url("/small-mym.png");
 }
 
 .mainProjects a:nth-child(2) .project{
-    background-image: url("/myjlist.jpg");
+    background-image: url("/small-myjlist.jpg");
 }
 
 .mainProjects a:nth-child(3) .project{
-    background-image: url("/indimap.png");
+    background-image: url("/small-indimap.png");
 }
 
 .mainProjects a:nth-child(4) .project{
-    background-image: url("/webmusic.jpg");
+    background-image: url("/small-webmusic.jpg");
+} */
+
+.project img {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
 }
 
-.project div:first-child{
+.fade_in_out {
+    opacity: 1 !important;
+}
+
+.project > div {
+    position: absolute;
+    top: 0;
     background-color: #008854;
     color: white;
     border-bottom-right-radius: 1vh;
     padding: 0.8vh 1.2vh;
+    padding-bottom: 0.9vh;
     font-weight: 600;
     font-size: 1.5vh;
     width: fit-content;

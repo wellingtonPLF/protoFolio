@@ -26,11 +26,13 @@ class GitHubService {
             'MyJList',
             'RockStarBand'
         ]
+
         const indimap = {
             id: 1, 
             name: 'IndiMap', 
             language: 'JavaScript', 
-            html_url: 'https://indimap.org/'
+            html_url: 'https://indimap.org/',
+            img: '/indimap.png'
         }
         const result = await Promise.all(
             projects.map(async (project) => {

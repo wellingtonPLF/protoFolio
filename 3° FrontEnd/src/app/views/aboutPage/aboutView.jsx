@@ -9,6 +9,11 @@ import AboutSplideComponent from '../../components/_main/aboutSplideComponent/ab
 const AboutViewComponent = () => {
 
     const [windowScreen, setWindowScreen] = useState(false)
+    const [loadedImages, setLoadedImages] = useState(false);
+
+    const handleLoadImages = () => {
+        setLoadedImages(!loadedImages);
+    }
 
     useEffect(()=> {
         setWindowScreen(window.innerWidth <= 1250)
@@ -77,7 +82,9 @@ const AboutViewComponent = () => {
                                             while I use the evenings to study new languages in which I am interested.
                                             </div>
                                         </div>
-                                        <div id={styles.desktop}></div>
+                                        <div id={styles.desktop}>
+                                            <img src="/desktop.jpg" onLoad={handleLoadImages} className={(loadedImages)? styles.fade_in_out : undefined} alt='None' />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
