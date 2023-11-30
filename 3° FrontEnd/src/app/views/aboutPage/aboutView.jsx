@@ -10,9 +10,14 @@ const AboutViewComponent = () => {
 
     const [windowScreen, setWindowScreen] = useState(false)
     const [loadedImages, setLoadedImages] = useState(false);
+    const [loadedVideo, setLoadedVideo] = useState(false);
 
     const handleLoadImages = () => {
         setLoadedImages(!loadedImages);
+    }
+
+    const handleLoadVideo = () => {
+        setLoadedVideo(!loadedVideo);
     }
 
     useEffect(()=> {
@@ -27,6 +32,10 @@ const AboutViewComponent = () => {
             }
         })
     }, [])
+
+    const show = () => {
+        console.log(loadedVideo)
+    }
 
     return (
         <div id={styles.aboutPage}>
@@ -69,12 +78,12 @@ const AboutViewComponent = () => {
                                     <FavoriteListComponent />
                                 </div>
                                 <div id={styles.rightContainer}>
-                                    <div id={styles.video}>
-                                        <iframe src="https://www.youtube.com/embed/0lbzmZeS-BY" controls></iframe>
+                                    <div id={styles.video} className={(loadedVideo)? styles.apresentationLoaded : styles.apresentation}>
+                                        <iframe src="https://www.youtube.com/embed/0lbzmZeS-BY" onLoad={handleLoadVideo} controls></iframe>
                                     </div>
                                     <div>
                                         <div>
-                                            <h4>Fatos Aleatórios</h4>
+                                            <h4 onClick={show}>Fatos Aleatórios</h4>
                                             <div>
                                             In addition to being a programmer, &nbsp;&nbsp;&nbsp;
                                             I also have a great passion for drawing, music, and theater. 

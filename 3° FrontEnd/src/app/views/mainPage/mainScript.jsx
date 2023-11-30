@@ -1,37 +1,30 @@
-import React, {Component} from 'react';
+import { useQuery } from 'react-query';
+import React, { useEffect, useState } from 'react';
 import MainScreenView from './mainView';
 import gitHubService from '../../shared/service/GitHubService';
 
-class MainScreenComponent extends Component {
+const MainScreenComponent = () => {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            projects: []
-        }
-    }
-
-    componentDidMount(){
-        gitHubService.listMains().then(
+    const { data, isFetching } = useQuery('projects', () => {
+        const response = gitHubService.listMains().then(
             it => {
                 const result =  it.map((element) => {
                     let {id, name, language, html_url, img} = element;
                     return {id, name, language, html_url, img}
                 })
-                this.setState({
-                    projects: result
-                })
+                return result;
             }
-        )
-    }
+        )  
+        return response
+    })
 
-    render() {
-        return (
-            <div>
-                <MainScreenView projects={this.state.projects}/>
-            </div>
-        );
-    }
+    return (
+        <div>
+            { data && (
+                <MainScreenView projects={data}/>
+            )}
+        </div>
+    );
 }
 
 export default MainScreenComponent;

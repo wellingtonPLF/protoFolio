@@ -125,8 +125,33 @@
 }
 
 #video{
+    position: relative;
+    background-color: black;
     width: 100%;
     height: 100%;
+}
+
+.apresentation::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    animation: pulse 2.5s infinite;
+}
+
+.apresentationLoaded::before {
+    content: none !important;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: rgba(255,255,255, 0)
+    }
+    50% {
+        background-color: rgba(255,255,255, 0.3)
+    }
+    100% {
+        background-color: rgba(255,255,255, 0)
+    }
 }
 
 #video iframe {
@@ -143,7 +168,7 @@
 }
 
 #rightContainer > div:first-child {
-    height: 60%;
+    height: 58%;
 }
 
 #rightContainer > div:last-child {
@@ -175,6 +200,8 @@
 #desktop {
     width: 50%;
     height: 85%;
+    position: relative;
+    background-color: #000000a1;
     /* background: url("./../../../assets/images/desktop.jpg") center/cover; */
 }
 

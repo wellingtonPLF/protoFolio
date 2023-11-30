@@ -22,10 +22,16 @@
     height: 100%;
     width: 100%;
     min-width: 35vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6) 100%, transparent), url("../../../assets/gifs/matrix-rain.gif");
+    background-color: #001e13;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.6) 100%, transparent), url("../../../assets/gifs/matrix-rain.gif"); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
+}
+
+.matrix {
+    position: absolute;
 }
 
 .menu{
@@ -34,6 +40,7 @@
     width: 100%;
     margin-top: 2vh;
     min-width: 35vh;
+    z-index: 200;
     position: absolute;
 }
 
@@ -45,6 +52,7 @@
     background-image: url("../../../assets/images/eu.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: 200;
 }
 /* ================================================================== */
 .subject{
