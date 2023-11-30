@@ -16,7 +16,9 @@ const MainScreenView = (props) => {
     const fontSize = 22;
 
     const [widthState, setWidthState] = useState(window.innerWidth);
-    const [heightState, setHeightState] = useState(window.innerHeight * 0.49);
+    const [heightState, setHeightState] = useState(
+        (window.innerWidth <= 800)? window.innerHeight * 0.38 : window.innerHeight * 0.49
+    );
 
     const [intervalState, setIntervalState] = useState();
 
@@ -45,8 +47,14 @@ const MainScreenView = (props) => {
     useEffect(() => {
         window.addEventListener('resize', () => {
             if (intervalState != undefined) {
+                let height = 0;
                 const width = window.innerWidth
-                const height = window.innerHeight * 0.49
+                if (window.innerWidth <= 800) {
+                    height = window.innerHeight * 0.38
+                }
+                else {
+                    height = window.innerHeight * 0.49
+                }                
                 setWidthState(width)
                 setHeightState(height)
                 setColumns(width/fontSize)
