@@ -17,7 +17,7 @@ const MainScreenView = (props) => {
 
     const [widthState, setWidthState] = useState(window.innerWidth);
     const [heightState, setHeightState] = useState(
-        (window.innerWidth <= 800)? window.innerHeight * 0.38 : window.innerHeight * 0.49
+        (window.innerWidth <= 800)? window.innerHeight * 0.41 : window.innerHeight * 0.49
     );
 
     const [intervalState, setIntervalState] = useState();

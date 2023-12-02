@@ -31,6 +31,7 @@
 }
 
 .matrix {
+    top: 0;
     position: absolute;
 }
 
@@ -219,6 +220,11 @@
     .mainProjects a{
         width: 18vh;
         height: 15vh;
+    }
+
+    .face{
+        width: 18vh;
+        height: 18vh;
     }
 
     .projectName{

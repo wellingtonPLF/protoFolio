@@ -1,5 +1,12 @@
 
-
+#lockSkill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    max-width: 92vh;
+}
 
 #expertises{
     display: flex;
@@ -38,6 +45,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     height: 100%;
     width: 100%;
 }
@@ -187,7 +195,7 @@
     }
 
     #expertises > span:nth-child(3) > div{
-        margin-bottom: 5vh;
+        margin: 5vh 0;
     }
 }
 

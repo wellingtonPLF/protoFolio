@@ -21,10 +21,10 @@ const AboutViewComponent = () => {
     }
 
     useEffect(()=> {
-        setWindowScreen(window.innerWidth <= 1250)
+        setWindowScreen(window.innerWidth <= 1450)
         
         window.addEventListener('resize', () => {
-            if (window.innerWidth <= 1250) {
+            if (window.innerWidth <= 1450) {
                 setWindowScreen(true)
             }
             else {
@@ -32,10 +32,6 @@ const AboutViewComponent = () => {
             }
         })
     }, [])
-
-    const show = () => {
-        console.log(loadedVideo)
-    }
 
     return (
         <div id={styles.aboutPage}>
@@ -57,7 +53,9 @@ const AboutViewComponent = () => {
             </div>
             <span>
                 { windowScreen ? (
-                    <AboutSplideComponent />
+                    <div id={styles.lockSkill}>
+                        <AboutSplideComponent />
+                    </div>
                 ) : (
                     <>
                         <div id={styles.mainContainer}>
@@ -83,7 +81,7 @@ const AboutViewComponent = () => {
                                     </div>
                                     <div>
                                         <div>
-                                            <h4 onClick={show}>Fatos Aleatórios</h4>
+                                            <h4>Fatos Aleatórios</h4>
                                             <div>
                                             In addition to being a programmer, &nbsp;&nbsp;&nbsp;
                                             I also have a great passion for drawing, music, and theater. 

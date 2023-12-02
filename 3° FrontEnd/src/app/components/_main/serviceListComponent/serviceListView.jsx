@@ -26,8 +26,8 @@ const ServiceListViewComponent = () => {
     }, [])
 
     return (
-        <div>
-            <div id={styles.grab} className="splide" role="group" aria-label="Splide Basic HTML Example">
+        <div id={styles.expertiseComponent}>
+            <div id={styles.grab} className="splide" role="group" style={{width: '100%'}} aria-label="Splide Basic HTML Example">
                 <div className="splide__track">
                         <ul className="splide__list">
                             <li className="splide__slide">
@@ -104,7 +104,7 @@ const ServiceListViewComponent = () => {
                                 <div id={styles.tecnologies}>
                                     <div id={styles.outdoor}>
                                         <div>
-                                            <img src={desenho}/>
+                                            <img src={desenho} alt='image'/>
                                         </div>
                                         <div>
                                             <h2>Top Skills</h2>

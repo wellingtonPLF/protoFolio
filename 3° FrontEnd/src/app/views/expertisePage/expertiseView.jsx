@@ -15,10 +15,10 @@ const ExpertiseViewComponent = () => {
     const [windowScreen, setWindowScreen] = useState(false)
 
     useEffect(()=> {
-        setWindowScreen(window.innerWidth <= 1500)
+        setWindowScreen(window.innerWidth <= 1750)
         
         window.addEventListener('resize', () => {
-            if (window.innerWidth <= 1500) {
+            if (window.innerWidth <= 1750) {
                 setWindowScreen(true)
             }
             else {
@@ -44,7 +44,9 @@ const ExpertiseViewComponent = () => {
             </span>
             <span>
                 { windowScreen ? (
-                    <ServiceListViewComponent />
+                    <div id={styles.lockSkill}>
+                        <ServiceListViewComponent/>
+                    </div>
                 ) : (
                     <>
                         <div id={styles.expertiseList}>
