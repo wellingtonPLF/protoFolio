@@ -172,81 +172,50 @@
     transition: opacity 200ms ease-in-out;
 }
 /* ================================================================================= */
-/* 
+
 @media screen and (max-width: 695px) {
+    
+    #aboutPage {
+        max-width: calc(75 * 1.3vw);
+    }
+
     #aboutPage > div{
         width: calc(70 * 1.3vw);
     }
 
-    #aboutPage > div > div{
-        margin-bottom: 5vw;
-    }
-    
     #containerUl {
         height: calc(55 * 1.3vw) !important;
     }
-    
-    #containerUl > li {
-        height: 90%;
-    }
-    
+
     #mainContainer > div {
-        height: 90%;
         width: calc(125 * 1.3vw);
     }
-    
-    #leftContainer {
-        width: 65%;
-    }
-    
+
     #leftContainer h3{
         font-size: calc(2.2 * 1.3vw);
-        margin-bottom: calc(1 * 1.3vw);
     }
-    
+
     #leftContainer a {
         margin-top: calc(1 * 1.3vw);
         font-size: calc(1.6 * 1.3vw);
         padding: calc(0.5 * 1.3vw) calc(1.2 * 1.3vw) calc(0.8 * 1.3vw) calc(1 * 1.3vw);
         border-radius: calc(0.5 * 1.3vw);
     }
-    
+
     #leftContainer > :nth-child(2) {
-        margin: 0 calc(5.5 * 1.3vw) 0 calc(1 * 1.3vw);
+        margin: calc(0 5.5 * 1.3vw) 0 calc(1 * 1.3vw);
     }
 
     #leftContainer > div:first-child > div {
         font-size: calc(1.65 * 1.3vw);
     }
-    
-    #rightContainer {
-        width: 80%;
-        height: 100%;
-    }
-    
+
     #rightContainer h4 {
         font-size: calc(2 * 1.3vw);
-    }
-    
-    #rightContainer > div:first-child {
-        height: 60%;
-    }
-    
-    #rightContainer > div:last-child {
-        height: calc(100% - 60%);
-    }    
-    
-    #rightContainer > div:last-child > div:first-child {
-        width: 50%;
-        height: 100%;
+        margin-top: calc(1 * 1.3vw);
     }
 
     #rightContainer > div:last-child > div:first-child > div {
-        font-size: calc(1.65 * 1.3vw);
+        font-size: calc(1.6 * 1.3vw);
     }
-    
-    #desktop {
-        width: 50%;
-        height: 90%;
-    }
-} */
+}

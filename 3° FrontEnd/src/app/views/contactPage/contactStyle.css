@@ -112,6 +112,10 @@
     font-family: 'Nova Square', sans-serif;
 }
 
+#phrase > div:nth-child(2) > div{
+    font-size: 1.5vh;
+}
+
 #titleContact{
     text-align: center;
     width: 100%;

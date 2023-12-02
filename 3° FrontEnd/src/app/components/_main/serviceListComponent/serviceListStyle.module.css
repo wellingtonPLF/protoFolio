@@ -135,3 +135,57 @@
 }
 
 /* ========================================================== */
+
+@media screen and (max-width: 695px) {
+
+    #projectList{
+        padding: calc(5 * 1.3vw) 0;
+        border-radius: calc(2 * 1.3vw);
+    }
+    
+    #projectList > div > h4 {
+        font-size: calc(1.5 * 1.3vw);
+    }
+    
+    #icon {
+        margin-left: calc(0.3 * 1.3vw);
+        font-size: calc(2 * 1.3vw);
+    }
+    
+    #services {
+        padding-left: calc(3 * 1.3vw);
+        min-width: calc(47 * 1.3vw);
+    }
+    
+    #services > div {
+        margin-right: calc(2.5 * 1.3vw);
+    }
+    
+    #services > div > h4 {
+        font-size: calc(1.5 * 1.3vw);
+        margin-top: calc(1.2 * 1.3vw);
+        margin-bottom: calc(1 * 1.3vw);
+    }
+    
+    #services > div > :last-child{
+        font-size: calc(1.3 * 1.3vw);
+    }
+    /* ============================================================ */
+    
+    #tecnologies{
+        height: calc(40 * 1.3vw);
+    }
+    
+    #outdoor{
+        border-radius: calc(1 * 1.3vw);
+    }
+    
+    #outdoor > div:nth-child(2) h2{
+        font-size: calc(2.6 * 1.3vw);
+    }
+    
+    #outdoor > div:nth-child(2) p{
+        margin-top: calc(0.5 * 1.3vw);
+        font-size: calc(1.6 * 1.3vw);
+    }
+}

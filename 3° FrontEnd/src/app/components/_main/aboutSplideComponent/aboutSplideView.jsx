@@ -48,7 +48,7 @@ const AboutSplideComponent = () => {
     return (
         <div id={styles.aboutPage}>
             <div className="splide" role="group" style={{width: '100%'}} aria-label="Splide Basic HTML Example">
-                <div className='splide__track'>
+                <div className='splide__track' style={{paddingBottom: '1vh'}}>
                     <ul className="splide__list" id={styles.containerUl}>
                         <li className="splide__slide">
                             <div id={styles.rightContainer}>

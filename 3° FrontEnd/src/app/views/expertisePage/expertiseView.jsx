@@ -15,10 +15,10 @@ const ExpertiseViewComponent = () => {
     const [windowScreen, setWindowScreen] = useState(false)
 
     useEffect(()=> {
-        setWindowScreen(window.innerWidth <= 1750)
+        setWindowScreen(window.innerWidth <= 1715)
         
         window.addEventListener('resize', () => {
-            if (window.innerWidth <= 1750) {
+            if (window.innerWidth <= 1715) {
                 setWindowScreen(true)
             }
             else {
