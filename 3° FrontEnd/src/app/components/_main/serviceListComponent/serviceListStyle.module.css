@@ -49,7 +49,7 @@
     justify-content: center;
     flex-wrap: wrap;
     padding-left: 3vh;
-    min-width: 47vh;
+    /* min-width: 47vh; */
 }
 
 #services > div {
@@ -154,11 +154,11 @@
     
     #services {
         padding-left: calc(3 * 1.3vw);
-        min-width: calc(47 * 1.3vw);
+        /* min-width: calc(47 * 1.3vw); */
     }
     
     #services > div {
-        margin-right: calc(2.5 * 1.3vw);
+        margin-right: calc(3.5 * 1.3vw);
     }
     
     #services > div > h4 {
