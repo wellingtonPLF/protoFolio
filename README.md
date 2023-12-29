@@ -6,7 +6,6 @@
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-como-executar">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-licença">Licença</a>
 </p>
 
@@ -22,30 +21,30 @@
   <img alt="proto-folio-screen" src="_Apresentation/mainScreen.jpg" width="100%">
 </p>
 
+## 🚀 Link:   https://super-protofolio.netlify.app/
+
 ## ✨ Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
+- [Git](https://git-scm.com/)
+- [Vite](https://vitejs.dev/)
+- [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [YARN](https://yarnpkg.com/)
+- [Axios](https://axios-http.com/ptbr/docs/intro)
+- [ReactQuery](https://tanstack.com/query/latest)
 - [React](https://legacy.reactjs.org/)
 - [JavaScript](https://www.typescriptlang.org/)
+- [Java](https://www.java.com/pt-BR/)
 - [Spring Boot](https://spring.io/)
 
 ## 💻 Projeto
 
-O protoFolio é um app que tem o intuito de apresentar alguns projetos desenvolvidos por mim, para a alto promoção 
-do meu próprio trabalho.
+O protoFolio é um app que tem o intuito de apresentar alguns projetos desenvolvidos por mim, para a divulgação do meu próprio trabalho.
 
 ## 🔖 Layout
 
 Você pode visualizar o layout do projeto através da pasta prototipagem do próprio repositório.
-
-## 🚀 Como executar
-
-- Clone o repositório
-- Instale as dependências com `yarn install`
-- Inicie o servidor com `yarn run dev`
-
-Agora você pode acessar [`localhost:3000`](http://localhost:3000) do seu navegador.
 
 ## 📄 Licença
 
