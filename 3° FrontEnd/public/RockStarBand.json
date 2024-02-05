@@ -25,7 +25,7 @@
         "type": "User",
         "site_admin": false
     },
-    "html_url": "https://github.com/wellingtonPLF/RockStarBand",
+    "html_url": "https://supervisionary.netlify.app",
     "description": "Um site que apresenta uma das banda mais populares da atualidade, com o intuito de divulgar e fazer o marketing ao público interessado.",
     "fork": false,
     "url": "https://api.github.com/repos/wellingtonPLF/RockStarBand",
