@@ -25,7 +25,7 @@
       "type": "User",
       "site_admin": false
     },
-    "html_url": "https://github.com/wellingtonPLF/MyIndividualManagement",
+    "html_url": "https://myindividualmanagement.netlify.app/",
     "description": "An Application that creates a environment to manage your tasks; (⚙️)",
     "fork": false,
     "url": "https://api.github.com/repos/wellingtonPLF/MyIndividualManagement",
